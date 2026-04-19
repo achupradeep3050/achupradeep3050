@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:161b22,60:1f6feb,100:58a6ff&height=220&section=header&text=Achu%20Pradeep&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Quantitative%20Developer%20%7C%20Algo%20Trader%20%7C%20AI%20Engineer&descAlignY=58&descSize=18&animation=twinkling&stroke=58a6ff&strokeWidth=1" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=58A6FF&background=0D111700&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=55&lines=Building+AI-Powered+Trading+Systems;Smart+Money+Concepts+FVG+EMA+Strategy;Python+FastAPI+React+Full-Stack+Dev;Automating+Gold+XAUUSD+24%2F5+with+Algos;Quantitative+Finance+and+Machine+Learning" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=58A6FF&background=0D111700&center=true&vCenter=true&multiline=false&repeat=true&width=720&height=55&lines=Building+AI-Powered+Trading+Systems;Smart+Money+Concepts+FVG+EMA+Strategy;SMA+8%2F21%2F50+Crossover+Scalping+Bot;JavaScript+%2B+Python+%2B+React+Full-Stack;Ansible+%7C+Docker+%7C+Linux+Automation;Automating+Gold+XAUUSD+24%2F5+with+Algos;Quantitative+Finance+and+Machine+Learning" alt="Typing SVG" />
 
 <br/>
 
@@ -46,15 +46,24 @@
 <summary id="tab-stack"><b>🛠️ &nbsp;Stack</b></summary>
 <br/>
 
-| Layer         | Technologies                                                         |
-|:--------------|:---------------------------------------------------------------------|
-| **Languages** | `Python` · `TypeScript` · `Pine Script` · `Bash`                     |
-| **Backend**   | `FastAPI` · `SQLAlchemy` · `MariaDB` · `PM2`                         |
-| **Frontend**  | `React` · `Vite` · `lightweight-charts` · `TailwindCSS`              |
-| **Trading**   | `OANDA v20` · `TOOBIT Futures` · `yFinance` · `TradingView`          |
-| **AI / LLM**  | `Claude AI` · `DeepSeek-V3` · `DeepSeek-Coder-V2`                    |
-| **Mobile**    | `Android Studio` · `WebView Apps` · `Xiaomi Kernel (AOSP)`           |
-| **Ops**       | `Linux` · `Docker` · `Git` · `ngrok` · `Telegram Bot API`            |
+| Layer         | Technologies                                                                                       |
+|:--------------|:---------------------------------------------------------------------------------------------------|
+| **Languages** | `JavaScript` · `Python` · `TypeScript` · `HTML` · `CSS` · `Shell` · `Kotlin` · `Pine Script`       |
+| **Backend**   | `FastAPI` · `Node.js` · `SQLAlchemy` · `MariaDB` · `PM2`                                           |
+| **Frontend**  | `React` · `Vite` · `lightweight-charts` · `TailwindCSS` · `HTML5` · `CSS3`                         |
+| **Trading**   | `OANDA v20` · `TOOBIT Futures` · `yFinance` · `TradingView`                                        |
+| **AI / LLM**  | `Claude AI` · `DeepSeek-V3` · `DeepSeek-Coder-V2`                                                  |
+| **Mobile**    | `Android Studio` · `Kotlin` · `WebView Apps` · `Xiaomi Kernel (AOSP)`                              |
+| **DevOps**    | `Ansible` · `Docker` · `Linux` · `Shell` · `Git` · `ngrok` · `Telegram Bot API`                    |
+
+**📊 Real language mix across my repos**
+
+![JavaScript](https://img.shields.io/badge/JavaScript-45.7%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-38.6%25-3776AB?style=flat-square&logo=python&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-8.3%25-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-4.4%25-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-2.2%25-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-0.6%25-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 
 </details>
 
@@ -77,6 +86,8 @@
 <br/>
 
 - 🏗️ Building a **24/5 automated multi-broker gold (XAUUSD) algo** — `FastAPI + React + Android`
+- ⚡ Shipping **`sma_cross_scalp_bot`** — 24/7 forex/CFD scalper (SMA 8/21/50 crossover on M1, ATR filter, React dashboard)
+- 🛠️ Developing **`versioncheck-ansible`** — JavaScript tooling for Ansible playbook version auditing
 - 🧪 Expanding the **[`crypto`](https://github.com/achupradeep3050/crypto)** repo with new algorithmic trading strategies
 - 🧠 Experimenting with **DeepSeek-V3** and **Claude** for LLM-assisted quant research
 - 📱 Shipping an **Android WebView** client + **Telegram bot** for remote trade monitoring
@@ -100,7 +111,7 @@
 
 ## 🛠️ Tech Arsenal
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,react,typescript,vite,js,nodejs,html,css,git,github,linux,docker,bash,androidstudio,markdown&theme=dark&perline=8" alt="Tech Stack" />
+<img src="https://skillicons.dev/icons?i=python,js,ts,fastapi,react,vite,nodejs,html,css,tailwind,ansible,docker,linux,bash,git,github,kotlin,androidstudio,markdown&theme=dark&perline=10" alt="Tech Stack" />
 
 <br/><br/>
 
@@ -114,6 +125,8 @@
 <img src="https://img.shields.io/badge/OANDA-FF6600?style=for-the-badge&logo=forex&logoColor=white" />
 <img src="https://img.shields.io/badge/Claude_AI-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" />
 <img src="https://img.shields.io/badge/DeepSeek-0052CC?style=for-the-badge&logo=deepseek&logoColor=white" />
+<img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
+<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 
 </div>
 
@@ -153,6 +166,37 @@ Alerts:       Telegram Bot - Every trade placed/closed in real-time
 - 🌲 Pine Script v5 indicator that mirrors Python logic exactly
 
 </td></tr></table>
+
+<br/>
+
+<table><tr>
+<td width="50%">
+
+### ⚡ sma_cross_scalp_bot — *Private · Live*
+> 24/7 automated forex/CFD scalping bot
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/SMA-8%2F21%2F50-00d084?style=flat-square" />
+<img src="https://img.shields.io/badge/Status-LIVE-00d084?style=flat-square" />
+
+SMA 8/21/50 crossover on M1, React dashboard, 75% profit booking, ATR consolidation filter to skip choppy ranges.
+
+</td>
+<td width="50%">
+
+### 🔧 versioncheck-ansible — *Private · New*
+> Ansible playbook version auditing tool
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" />
+
+JavaScript tooling + web UI for inspecting Ansible playbook and role versions across environments.
+
+</td>
+</tr></table>
 
 <br/>
 
@@ -311,12 +355,12 @@ STEP 3 — EXECUTION (every 15 seconds)
 
 <div align="center">
 
-| 📈 Algorithmic Trading | 🤖 AI / ML Engineering | 🔐 Privacy Tech | 📱 Android Dev |
-|:---:|:---:|:---:|:---:|
-| Smart Money Concepts | DeepSeek LLMs | SimpleX Chat | Xiaomi Kernel |
-| FVG + EMA Strategy | Claude AI Integration | End-to-end Encryption | AOSP / DeviceTree |
-| Multi-broker Execution | LLM-assisted coding | Zero-ID Messaging | Custom ROM Dev |
-| Backtesting Engines | Quantitative Modeling | Decentralized Systems | Android 16 |
+| 📈 Algorithmic Trading | 🤖 AI / ML Engineering | 🔐 Privacy Tech | 📱 Android / Kernel | 🔧 DevOps |
+|:---:|:---:|:---:|:---:|:---:|
+| Smart Money Concepts | DeepSeek LLMs | SimpleX Chat | Xiaomi Kernel | Ansible Automation |
+| FVG + EMA Strategy | Claude AI Integration | End-to-end Encryption | AOSP / DeviceTree | Version Auditing |
+| SMA Crossover Scalping | LLM-assisted coding | Zero-ID Messaging | Kotlin / WebView | Docker / Linux |
+| Backtesting Engines | Quantitative Modeling | Decentralized Systems | Android 16 | Shell / ngrok |
 
 </div>
 
