@@ -17,24 +17,80 @@
 
 <img align="right" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="380" alt="Snake animation"/>
 
-### 🧬 About Me
+## 🧬 About Me
 
-```python
-class AchuPradeep:
-    pronouns   = "he/him"
-    focus      = ["Algorithmic Trading", "AI Engineering", "Quantitative Finance"]
-    languages  = ["Python", "TypeScript", "Pine Script"]
-    stack      = {
-        "backend"  : ["FastAPI", "SQLAlchemy", "MariaDB"],
-        "frontend" : ["React", "Vite", "lightweight-charts"],
-        "trading"  : ["OANDA v20", "TOOBIT Futures", "yFinance"],
-        "ops"      : ["PM2", "ngrok", "Android WebView"]
-    }
-    strategy   = "Smart Money Concepts (FVG + EMA Bias)"
-    instrument = "XAUUSD - Gold / USD"
-    currently  = "Building 24/5 automated multi-broker gold algo"
-    fun_fact   = "My bot trades gold while I sleep"
-```
+<!-- Tab bar -->
+<p>
+  <a href="#tab-profile"><img src="https://img.shields.io/badge/%F0%9F%91%A4%20Profile-1f6feb?style=for-the-badge&labelColor=0d1117" alt="Profile tab"/></a>
+  <a href="#tab-stack"><img src="https://img.shields.io/badge/%F0%9F%9B%A0%EF%B8%8F%20Stack-161b22?style=for-the-badge&labelColor=0d1117" alt="Stack tab"/></a>
+  <a href="#tab-focus"><img src="https://img.shields.io/badge/%F0%9F%8E%AF%20Focus-161b22?style=for-the-badge&labelColor=0d1117" alt="Focus tab"/></a>
+  <a href="#tab-now"><img src="https://img.shields.io/badge/%E2%9A%A1%20Currently-161b22?style=for-the-badge&labelColor=0d1117" alt="Currently tab"/></a>
+  <a href="#tab-fun"><img src="https://img.shields.io/badge/%F0%9F%92%A1%20Fun%20Fact-161b22?style=for-the-badge&labelColor=0d1117" alt="Fun Fact tab"/></a>
+</p>
+
+<details open>
+<summary id="tab-profile"><b>👤 &nbsp;Profile</b></summary>
+<br/>
+
+| Field       | Value                                                                 |
+|:------------|:----------------------------------------------------------------------|
+| **Name**    | Achu Pradeep                                                          |
+| **Pronouns**| he / him                                                              |
+| **Role**    | Quantitative Developer · Algorithmic Trader · AI Engineer             |
+| **Based**   | India 🇮🇳                                                             |
+| **Email**   | achupradeep3050@gmail.com                                             |
+
+</details>
+
+<details>
+<summary id="tab-stack"><b>🛠️ &nbsp;Stack</b></summary>
+<br/>
+
+| Layer         | Technologies                                                         |
+|:--------------|:---------------------------------------------------------------------|
+| **Languages** | `Python` · `TypeScript` · `Pine Script` · `Bash`                     |
+| **Backend**   | `FastAPI` · `SQLAlchemy` · `MariaDB` · `PM2`                         |
+| **Frontend**  | `React` · `Vite` · `lightweight-charts` · `TailwindCSS`              |
+| **Trading**   | `OANDA v20` · `TOOBIT Futures` · `yFinance` · `TradingView`          |
+| **AI / LLM**  | `Claude AI` · `DeepSeek-V3` · `DeepSeek-Coder-V2`                    |
+| **Mobile**    | `Android Studio` · `WebView Apps` · `Xiaomi Kernel (AOSP)`           |
+| **Ops**       | `Linux` · `Docker` · `Git` · `ngrok` · `Telegram Bot API`            |
+
+</details>
+
+<details>
+<summary id="tab-focus"><b>🎯 &nbsp;Focus</b></summary>
+<br/>
+
+| Domain                        | What I'm doing                                                     |
+|:------------------------------|:-------------------------------------------------------------------|
+| **Algorithmic Trading**       | Smart Money Concepts — FVG + EMA bias on XAUUSD & crypto futures   |
+| **AI Engineering**            | LLM-assisted coding, Claude/DeepSeek pipelines, AI-agent workflows |
+| **Quantitative Finance**      | Backtesting engines, risk modelling, multi-broker execution        |
+| **Privacy Tech**              | SimpleX Chat, end-to-end encrypted messaging research              |
+| **Mobile & Kernel**           | Xiaomi kernel / device-tree builds, Android 16 ROM experiments     |
+
+</details>
+
+<details>
+<summary id="tab-now"><b>⚡ &nbsp;Currently</b></summary>
+<br/>
+
+- 🏗️ Building a **24/5 automated multi-broker gold (XAUUSD) algo** — `FastAPI + React + Android`
+- 🧪 Expanding the **[`crypto`](https://github.com/achupradeep3050/crypto)** repo with new algorithmic trading strategies
+- 🧠 Experimenting with **DeepSeek-V3** and **Claude** for LLM-assisted quant research
+- 📱 Shipping an **Android WebView** client + **Telegram bot** for remote trade monitoring
+- 📊 Designing a **6-timeframe bias grid** (M1 → H4) that refreshes every 15 seconds
+
+</details>
+
+<details>
+<summary id="tab-fun"><b>💡 &nbsp;Fun Fact</b></summary>
+<br/>
+
+> My bot trades gold while I sleep — systematic, emotionless, and backtested across years of tick data.
+
+</details>
 
 <br clear="right"/>
 
@@ -103,13 +159,14 @@ Alerts:       Telegram Bot - Every trade placed/closed in real-time
 <table><tr>
 <td width="50%">
 
-### 📊 [crypto](https://github.com/achupradeep3050/crypto) — *Public*
+### 📊 [crypto](https://github.com/achupradeep3050/crypto) — *Public · ⭐ 1*
 > Algorithmic crypto trading strategies
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Algo-Trading-00d084?style=flat-square" />
+<img src="https://img.shields.io/github/last-commit/achupradeep3050/crypto?style=flat-square&color=1f6feb" />
 
-Automated trading algorithms for crypto markets.
+Automated trading algorithms exploring momentum, mean-reversion, and SMC-style entries on crypto markets.
 
 </td>
 <td width="50%">
@@ -124,6 +181,63 @@ Real-time streaming metrics dashboard built with Python.
 
 </td>
 </tr></table>
+
+</div>
+
+---
+
+## 🔬 Research & Interests — Forks I Follow Closely
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+**🔐 [simplex-chat](https://github.com/achupradeep3050/simplex-chat)**<br/>
+<sub>Zero-identifier, fully private messaging</sub><br/>
+<img src="https://img.shields.io/badge/Privacy-Tech-58a6ff?style=flat-square" />
+
+</td>
+<td width="33%" align="center">
+
+**🤖 [DeepSeek-V3](https://github.com/achupradeep3050/DeepSeek-V3)**<br/>
+<sub>Frontier open-weights LLM research</sub><br/>
+<img src="https://img.shields.io/badge/LLM-Research-0052CC?style=flat-square" />
+
+</td>
+<td width="33%" align="center">
+
+**💬 [typebot.io](https://github.com/achupradeep3050/typebot.io)**<br/>
+<sub>Self-hosted conversational flows</sub><br/>
+<img src="https://img.shields.io/badge/Chatbot-Builder-8B5CF6?style=flat-square" />
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center">
+
+**🧑‍💻 [DeepSeek-Coder-V2](https://github.com/achupradeep3050/DeepSeek-Coder-V2)**<br/>
+<sub>Open code-intelligence models</sub><br/>
+<img src="https://img.shields.io/badge/Code-LLM-0052CC?style=flat-square" />
+
+</td>
+<td width="33%" align="center">
+
+**📱 [Xiaomi_Kernel_OpenSource](https://github.com/achupradeep3050/Xiaomi_Kernel_OpenSource)**<br/>
+<sub>Mobile kernel hacking & ROM builds</sub><br/>
+<img src="https://img.shields.io/badge/Kernel-AOSP-3DDC84?style=flat-square" />
+
+</td>
+<td width="33%" align="center">
+
+**🌲 [kernel_devicetree](https://github.com/achupradeep3050/kernel_devicetree)**<br/>
+<sub>Xiaomi device-tree overlays</sub><br/>
+<img src="https://img.shields.io/badge/DTS-Device_Tree-FF9800?style=flat-square" />
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -213,6 +327,7 @@ STEP 3 — EXECUTION (every 15 seconds)
 ## 🌐 Let's Connect
 
 [![GitHub](https://img.shields.io/badge/GitHub-achupradeep3050-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/achupradeep3050)
+[![Email](https://img.shields.io/badge/Email-achupradeep3050%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:achupradeep3050@gmail.com)
 
 *"The market is a device for transferring money from the impatient to the patient."*
 
@@ -225,5 +340,5 @@ STEP 3 — EXECUTION (every 15 seconds)
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58a6ff,50:1f6feb,100:0d1117&height=130&section=footer&animation=twinkling" width="100%"/>
 
 <div align="center">
-<sub>Crafted with Python, React and lots of coffee · Last updated: 2026</sub>
+<sub>Crafted with Python, React and lots of coffee · Last updated: April 2026</sub>
 </div>
