@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:161b22,60:1f6feb,100:58a6ff&height=220&section=header&text=Achu%20Pradeep&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Quantitative%20Developer%20%7C%20Algo%20Trader%20%7C%20AI%20Engineer&descAlignY=58&descSize=18&animation=twinkling&stroke=58a6ff&strokeWidth=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:161b22,60:1f6feb,100:58a6ff&height=220&section=header&text=Achu%20Pradeep&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Quantitative%20Developer%20%7C%20Algo%20Trader%20%7C%20AI%20Engineer%20%7C%20Cybersecurity%20Enthusiast&descAlignY=58&descSize=18&animation=twinkling&stroke=58a6ff&strokeWidth=1" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=58A6FF&background=0D111700&center=true&vCenter=true&multiline=false&repeat=true&width=720&height=55&lines=Building+AI-Powered+Trading+Systems;Smart+Money+Concepts+FVG+EMA+Strategy;SMA+8%2F21%2F50+Crossover+Scalping+Bot;JavaScript+%2B+Python+%2B+React+Full-Stack;Ansible+%7C+Docker+%7C+Linux+Automation;Automating+Gold+XAUUSD+24%2F5+with+Algos;Quantitative+Finance+and+Machine+Learning" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=58A6FF&background=0D111700&center=true&vCenter=true&multiline=false&repeat=true&width=720&height=55&lines=Building+AI-Powered+Trading+Systems;Smart+Money+Concepts+FVG+EMA+Strategy;SMA+8%2F21%2F50+Crossover+Scalping+Bot;JavaScript+%2B+Python+%2B+React+Full-Stack;Self-Hosted+SOC+Dashboards+%26+Cybersecurity;Automating+Gold+XAUUSD+24%2F5+with+Algos;Quantitative+Finance+and+Machine+Learning" alt="Typing SVG" />
 
 <br/>
 
 [![GitHub followers](https://img.shields.io/github/followers/achupradeep3050?label=Follow&style=for-the-badge&logo=github&logoColor=white&color=1f6feb&labelColor=0d1117)](https://github.com/achupradeep3050)
 [![Profile Views](https://komarev.com/ghpvc/?username=achupradeep3050&style=for-the-badge&color=1f6feb&label=PROFILE+VIEWS&labelColor=0d1117)](https://github.com/achupradeep3050)
 [![Python](https://img.shields.io/badge/Python-Expert-1f6feb?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117)](https://github.com/achupradeep3050)
-[![Status](https://img.shields.io/badge/STATUS-Building+Algo+Bots-58a6ff?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=0d1117)](https://github.com/achupradeep3050)
+[![Status](https://img.shields.io/badge/STATUS-Building+Algo+Bots+%26+SOC-58a6ff?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=0d1117)](https://github.com/achupradeep3050)
 
 </div>
 
@@ -73,6 +73,7 @@
 
 | Domain                        | What I'm doing                                                     |
 |:------------------------------|:-------------------------------------------------------------------|
+| **Cybersecurity**             | Self-hosted SOC dashboards, OpenVAS/GVM vulnerability auditing     |
 | **Algorithmic Trading**       | Smart Money Concepts — FVG + EMA bias on XAUUSD & crypto futures   |
 | **AI Engineering**            | LLM-assisted coding, Claude/DeepSeek pipelines, AI-agent workflows |
 | **Quantitative Finance**      | Backtesting engines, risk modelling, multi-broker execution        |
@@ -85,13 +86,13 @@
 <summary id="tab-now"><b>⚡ &nbsp;Currently</b></summary>
 <br/>
 
-- 🏗️ Building a **24/5 automated multi-broker gold (XAUUSD) algo** — `FastAPI + React + Android`
-- ⚡ Shipping **`sma_cross_scalp_bot`** — 24/7 forex/CFD scalper (SMA 8/21/50 crossover on M1, ATR filter, React dashboard)
-- 🛠️ Developing **`versioncheck-ansible`** — JavaScript tooling for Ansible playbook version auditing
-- 🧪 Expanding the **[`crypto`](https://github.com/achupradeep3050/crypto)** repo with new algorithmic trading strategies
-- 🧠 Experimenting with **DeepSeek-V3** and **Claude** for LLM-assisted quant research
-- 📱 Shipping an **Android WebView** client + **Telegram bot** for remote trade monitoring
-- 📊 Designing a **6-timeframe bias grid** (M1 → H4) that refreshes every 15 seconds
+- 🛡️ Building **`VA-Opensource-Audit`** — Self-hosted SOC dashboard for agentless vulnerability auditing, ClamAV, and OpenVAS/GVM scanning across Linux servers.
+- 🏗️ Running **`xauusd-fvg-algo`** — A 24/5 automated multi-broker gold (XAUUSD) algo using FastAPI + React + Android.
+- ⚡ Shipping **`sma_cross_scalp_bot`** — 24/7 forex/CFD scalper (SMA 8/21/50 crossover on M1, ATR filter, React dashboard).
+- 🧠 Developing **`my-brain`** — Personal knowledge management and AI-driven structured data repository.
+- 📺 Expanding **`OBStat`** — Real-time OBS streaming statistics and analytics dashboard.
+- 🧪 Maintaining **[`crypto`](https://github.com/achupradeep3050/crypto)** — Open-source algorithmic trading strategies.
+- 📱 Shipping an **Android WebView** client + **Telegram bot** for remote trade monitoring.
 
 </details>
 
@@ -138,6 +139,31 @@
 
 <table><tr><td width="100%">
 
+### 🛡️ VA-Opensource-Audit — *Private · Active*
+
+> **Self-hosted SOC dashboard for enterprise Linux vulnerability auditing**
+
+```
+Architecture: Node.js -> React SPA -> Agentless Scanners
+Integrations: ClamAV, OpenVAS / GVM
+Features:     Agentless server auditing, real-time vulnerability scans, centralized SOC view
+```
+
+<img src="https://img.shields.io/badge/JavaScript-Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Cybersecurity-SOC-FF3E00?style=flat-square" />
+<img src="https://img.shields.io/badge/Status-LIVE-00d084?style=flat-square" />
+
+- 📊 Centralized dashboard for multiple Linux endpoints.
+- ⚙️ Automated vulnerability scanning and reporting.
+- 🔒 Secure agentless implementation.
+
+</td></tr></table>
+
+<br/>
+
+<table><tr><td width="100%">
+
 ### 🥇 [XAUUSD FVG Algo](https://github.com/achupradeep3050/xauusd-fvg-algo) — *Private · Flagship*
 
 > **Multi-broker automated gold trading system running 24/5**
@@ -154,16 +180,7 @@ Alerts:       Telegram Bot - Every trade placed/closed in real-time
 <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=flat-square&logo=react&logoColor=black" />
 <img src="https://img.shields.io/badge/OANDA-v20%20API-FF6600?style=flat-square" />
 <img src="https://img.shields.io/badge/TOOBIT-Futures%20API-0052CC?style=flat-square" />
-<img src="https://img.shields.io/badge/MariaDB-10.6+-003545?style=flat-square&logo=mariadb&logoColor=white" />
-<img src="https://img.shields.io/badge/Android-16-3DDC84?style=flat-square&logo=android&logoColor=white" />
 <img src="https://img.shields.io/badge/Status-LIVE-00d084?style=flat-square" />
-
-- 📊 TradingView-style candlestick chart with EMA overlays and live trade zones
-- ⚙️ 6-timeframe bias grid (M1 → H4) updating every 15 seconds
-- 📉 Built-in backtesting engine with equity curve and trade ledger
-- 🤖 AI-assisted setup via Claude — auto-detects OS and installs everything
-- 📱 Android WebView app with ngrok tunnel for remote monitoring
-- 🌲 Pine Script v5 indicator that mirrors Python logic exactly
 
 </td></tr></table>
 
@@ -178,22 +195,20 @@ Alerts:       Telegram Bot - Every trade placed/closed in real-time
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
 <img src="https://img.shields.io/badge/SMA-8%2F21%2F50-00d084?style=flat-square" />
-<img src="https://img.shields.io/badge/Status-LIVE-00d084?style=flat-square" />
 
 SMA 8/21/50 crossover on M1, React dashboard, 75% profit booking, ATR consolidation filter to skip choppy ranges.
 
 </td>
 <td width="50%">
 
-### 🔧 versioncheck-ansible — *Private · New*
-> Ansible playbook version auditing tool
+### 📺 OBStat — *Private*
+> OBS streaming statistics and analytics
 
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/OBS-302E31?style=flat-square&logo=obs-studio&logoColor=white" />
+<img src="https://img.shields.io/badge/Analytics-Dashboard-58a6ff?style=flat-square" />
 
-JavaScript tooling + web UI for inspecting Ansible playbook and role versions across environments.
+Real-time streaming metrics dashboard built with Python.
 
 </td>
 </tr></table>
@@ -208,20 +223,19 @@ JavaScript tooling + web UI for inspecting Ansible playbook and role versions ac
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Algo-Trading-00d084?style=flat-square" />
-<img src="https://img.shields.io/github/last-commit/achupradeep3050/crypto?style=flat-square&color=1f6feb" />
 
 Automated trading algorithms exploring momentum, mean-reversion, and SMC-style entries on crypto markets.
 
 </td>
 <td width="50%">
 
-### 📺 OBStat — *Private*
-> OBS streaming statistics and analytics
+### 🧠 my-brain — *Private*
+> Knowledge management base
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/OBS-302E31?style=flat-square&logo=obs-studio&logoColor=white" />
+<img src="https://img.shields.io/badge/AI-Integration-8B5CF6?style=flat-square" />
+<img src="https://img.shields.io/badge/Knowledge-Base-F7DF1E?style=flat-square" />
 
-Real-time streaming metrics dashboard built with Python.
+Structured knowledge management system.
 
 </td>
 </tr></table>
@@ -355,12 +369,12 @@ STEP 3 — EXECUTION (every 15 seconds)
 
 <div align="center">
 
-| 📈 Algorithmic Trading | 🤖 AI / ML Engineering | 🔐 Privacy Tech | 📱 Android / Kernel | 🔧 DevOps |
+| 📈 Algorithmic Trading | 🤖 AI / ML Engineering | 🔐 Privacy Tech | 📱 Android / Kernel | 🛡️ Cybersecurity |
 |:---:|:---:|:---:|:---:|:---:|
-| Smart Money Concepts | DeepSeek LLMs | SimpleX Chat | Xiaomi Kernel | Ansible Automation |
-| FVG + EMA Strategy | Claude AI Integration | End-to-end Encryption | AOSP / DeviceTree | Version Auditing |
-| SMA Crossover Scalping | LLM-assisted coding | Zero-ID Messaging | Kotlin / WebView | Docker / Linux |
-| Backtesting Engines | Quantitative Modeling | Decentralized Systems | Android 16 | Shell / ngrok |
+| Smart Money Concepts | DeepSeek LLMs | SimpleX Chat | Xiaomi Kernel | Vulnerability Auditing |
+| FVG + EMA Strategy | Claude AI Integration | End-to-end Encryption | AOSP / DeviceTree | Agentless Scanning |
+| SMA Crossover Scalping | LLM-assisted coding | Zero-ID Messaging | Kotlin / WebView | SOC Dashboards |
+| Backtesting Engines | Quantitative Modeling | Decentralized Systems | Android 16 | ClamAV / OpenVAS |
 
 </div>
 
@@ -384,5 +398,5 @@ STEP 3 — EXECUTION (every 15 seconds)
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58a6ff,50:1f6feb,100:0d1117&height=130&section=footer&animation=twinkling" width="100%"/>
 
 <div align="center">
-<sub>Crafted with Python, React and lots of coffee · Last updated: April 2026</sub>
+<sub>Crafted with Python, React and lots of coffee · Last updated: May 2026</sub>
 </div>
