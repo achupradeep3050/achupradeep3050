@@ -91,6 +91,7 @@
 - ⚡ Shipping **`sma_cross_scalp_bot`** — 24/7 forex/CFD scalper (SMA 8/21/50 crossover on M1, ATR filter, React dashboard).
 - 🧠 Developing **`my-brain`** — Personal knowledge management and AI-driven structured data repository.
 - 📺 Expanding **`OBStat`** — Real-time OBS streaming statistics and analytics dashboard.
+- 🎯 Building **`jobmind-agent`** — AI-powered job application agent (CrewAI + Streamlit + Kimi) for resume analysis, interview prep, and cover letter generation.
 - 🧪 Maintaining **[`crypto`](https://github.com/achupradeep3050/crypto)** — Open-source algorithmic trading strategies.
 - 📱 Shipping an **Android WebView** client + **Telegram bot** for remote trade monitoring.
 
@@ -209,6 +210,23 @@ SMA 8/21/50 crossover on M1, React dashboard, 75% profit booking, ATR consolidat
 <img src="https://img.shields.io/badge/Analytics-Dashboard-58a6ff?style=flat-square" />
 
 Real-time streaming metrics dashboard built with Python.
+
+</td>
+</tr></table>
+
+<br/>
+
+<table><tr>
+<td width="50%">
+
+### 🎯 [jobmind-agent](https://github.com/achupradeep3050/jobmind-agent) — *Private*
+> AI-powered job application copilot
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/CrewAI-Multi--Agent-FF6B6B?style=flat-square" />
+<img src="https://img.shields.io/badge/Kimi-Moonshot%20AI-6B5FFF?style=flat-square" />
+
+CrewAI agents analyze resumes vs JDs, score match %, generate interview Q&A, and write cover letters automatically.
 
 </td>
 </tr></table>
