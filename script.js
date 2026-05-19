@@ -1,147 +1,124 @@
 /* ═══════════════════════════════════════════════════════════
-   ACHU PRADEEP — PORTFOLIO v6 script.js
-   Features: Particles · 3D tilt · Glassmorphism · Reveals
+   ACHU PRADEEP — PORTFOLIO v7 JS
+   Enhanced particles · 3D scroll effects · Magnetic hover
+   NO gold accent · Deep Ocean cyan/teal theme
 ═══════════════════════════════════════════════════════════ */
 
-'use strict';
+document.addEventListener('DOMContentLoaded', () => {
 
-// ─── PARTICLES GENERATOR ───
-(function generateParticles() {
+  /* ── PARTICLES ── */
   const container = document.getElementById('particles');
-  if (!container) return;
-  for (let i = 0; i < 40; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    const size = Math.random() * 3 + 1;
-    p.style.cssText = [
-      `left:${Math.random() * 100}%`,
-      `bottom:${Math.random() * 30}%`,
-      `width:${size}px`,
-      `height:${size}px`,
-      `animation-duration:${Math.random() * 15 + 10}s`,
-      `animation-delay:${Math.random() * 20}s`,
-    ].join(';');
-    container.appendChild(p);
-  }
-})();
-
-// ─── SCROLL REVEAL ───
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const delay = parseInt(entry.target.dataset.delay) || 0;
-      setTimeout(() => entry.target.classList.add('revealed'), delay);
-      revealObserver.unobserve(entry.target);
+  if (container) {
+    const COLORS = ['rgba(0,229,255,0.8)','rgba(0,145,255,0.7)','rgba(0,255,163,0.6)','rgba(124,77,255,0.5)'];
+    for (let i = 0; i < 50; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      p.style.left = (Math.random()*100) + '%';
+      const sz = Math.random()*2.5+0.5;
+      p.style.width = sz+'px'; p.style.height = sz+'px';
+      p.style.background = COLORS[Math.floor(Math.random()*COLORS.length)];
+      p.style.boxShadow = `0 0 ${sz*3}px ${COLORS[Math.floor(Math.random()*COLORS.length)]}`;
+      const dur = Math.random()*12+8, del = Math.random()*15;
+      p.style.animationDuration = dur+'s';
+      p.style.animationDelay = '-'+del+'s';
+      p.style.animationTimingFunction = 'linear';
+      p.style.animationIterationCount = 'infinite';
+      container.appendChild(p);
     }
-  });
-}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
-
-// ─── NAVBAR SCROLL BEHAVIOR ──��
-let lastScrollY = 0;
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-
-  // Glass effect
-  navbar.classList.toggle('scrolled', y > 60);
-
-  // Hide on scroll down
-  if (y > lastScrollY && y > 300) {
-    navbar.style.transform = 'translateY(-100%)';
-    navbar.style.transition = 'transform 0.3s ease';
-  } else {
-    navbar.style.transform = 'translateY(0)';
-    navbar.style.transition = 'transform 0.3s ease';
   }
 
-  lastScrollY = y;
-}, { passive: true });
+  /* ── NAV SCROLL ── */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
 
-// ─── PROJECT FILTER TABS ───
-function filterProjects(category) {
-  document.querySelectorAll('.tab-btn').forEach(b => {
-    b.classList.toggle('active',
-      b.textContent.trim().toLowerCase() === category ||
-      (category === 'all' && b.textContent.trim() === 'All')
-    );
-  });
-
-  document.querySelectorAll('.tab-item').forEach(item => {
-    const show = category === 'all' || item.dataset.category === category;
-    if (show) {
-      item.classList.remove('hidden');
-      item.classList.remove('revealed');
-      setTimeout(() => revealObserver.observe(item), 50);
-    } else {
-      item.classList.add('hidden');
-    }
-  });
-}
-window.filterProjects = filterProjects;
-
-// ─── 3D CARD TILT ───
-document.querySelectorAll('.skill-card, .exp-card, .tab-item, .proj-featured').forEach(card => {
-  card.addEventListener('mousemove', e => {
-    const rect = card.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width  - 0.5;
-    const y = (e.clientY - rect.top)  / rect.height - 0.5;
-    card.style.transform = `perspective(800px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg) translateY(-6px)`;
-    card.style.transition = 'transform 0.1s ease';
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-    card.style.transition = 'transform 0.4s ease';
-  });
-});
-
-// ─── FLOAT BADGE PARALLAX ───
-const floatBadges = document.querySelectorAll('.float-badge');
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  floatBadges.forEach((badge, i) => {
-    const speed = [0.06, 0.04, 0.08][i % 3];
-    badge.style.transform = `translateY(${y * speed}px)`;
-  });
-}, { passive: true });
-
-// ─── SMOOTH SCROLL FOR ANCHORS ───
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (!target) return;
-    window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
-  });
-});
-
-// ─── COUNTER ANIMATION ───
-function animateCounters() {
-  document.querySelectorAll('[data-counter]').forEach(el => {
-    const target = parseInt(el.dataset.counter);
-    const dur    = 1200;
-    const step   = target / (dur / 16);
-    let current  = 0;
-    const tick   = () => {
-      current = Math.min(current + step, target);
-      el.textContent = Math.floor(current) + (target > 9 ? '+' : '');
-      if (current < target) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  });
-}
-
-// ─── LAUNCH ───
-window.addEventListener('load', () => {
-  setTimeout(animateCounters, 400);
-  setTimeout(() => {
-    document.querySelectorAll('[data-reveal]').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight) revealObserver.observe(el);
+  /* ── SCROLL REVEAL ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
     });
-  }, 200);
-});
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => observer.observe(el));
 
-console.log('✅ Portfolio v6 — particles, 3D tilt, glassmorphism, smooth scroll active');
+  /* ── SMOOTH SCROLL NAV ── */
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const t = document.querySelector(link.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }); }
+    });
+  });
+
+  /* ── 3D CARD TILT ── */
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const dx = (e.clientX-r.left-r.width/2)/r.width;
+      const dy = (e.clientY-r.top-r.height/2)/r.height;
+      card.style.transform = `perspective(1000px) translateY(-6px) scale(1.02) rotateX(${-dy*6}deg) rotateY(${dx*8}deg)`;
+      card.style.transition = 'transform 0.15s ease-out';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.transition = 'transform 0.5s cubic-bezier(0.34,1.56,0.64,1)';
+    });
+  });
+
+  /* ── MAGNETIC BUTTONS ── */
+  document.querySelectorAll('.btn-primary,.btn-secondary,.clink,.plink').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      btn.style.transform = `translate(${(e.clientX-r.left-r.width/2)*0.2}px,${(e.clientY-r.top-r.height/2)*0.2}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+      btn.style.transition = 'transform 0.4s cubic-bezier(0.34,1.56,0.64,1)';
+    });
+  });
+
+  /* ── SCROLL PROGRESS BAR ── */
+  const pb = document.createElement('div');
+  pb.id = 'scroll-progress';
+  pb.style.cssText = 'position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,#0091FF,#00E5FF,#00FFA3);z-index:9999;pointer-events:none';
+  document.body.prepend(pb);
+  window.addEventListener('scroll', () => {
+    const sc = window.scrollY, tot = document.documentElement.scrollHeight-window.innerHeight;
+    pb.style.width = (tot>0?(sc/tot)*100:0)+'%';
+  }, { passive:true });
+
+  /* ── CURSOR GLOW (desktop) ── */
+  if (window.matchMedia('(pointer: fine)').matches) {
+    const cg = document.createElement('div');
+    cg.style.cssText = 'position:fixed;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,255,0.07),transparent 70%);pointer-events:none;z-index:9998;transform:translate(-50%,-50%);mix-blend-mode:screen';
+    document.body.appendChild(cg);
+    document.addEventListener('mousemove', e => { requestAnimationFrame(()=>{cg.style.left=e.clientX+'px';cg.style.top=e.clientY+'px';}); }, { passive:true });
+    document.addEventListener('mouseleave', ()=>cg.style.opacity='0');
+    document.addEventListener('mouseenter', ()=>cg.style.opacity='1');
+  }
+
+  /* ── ORB PARALLAX ── */
+  if (window.matchMedia('(pointer: fine)').matches) {
+    window.addEventListener('mousemove', e => {
+      const cx = window.innerWidth/2, cy = window.innerHeight/2;
+      const dx = (e.clientX-cx)/cx, dy = (e.clientY-cy)/cy;
+      document.querySelectorAll('.orb').forEach((o,i) => {
+        const f = (i+1)*0.04;
+        o.style.transform = `translate(${dx*f*100}px,${dy*f*60}px)`;
+      });
+    }, { passive:true });
+  }
+
+  /* ── AVATAR RING SPIN ── */
+  const ring = document.querySelector('.visual-avatar-ring');
+  if (ring) {
+    let angle = 0;
+    function spin() { angle+=0.5; ring.style.background=`conic-gradient(from ${angle}deg,var(--accent),var(--accent2),var(--accent3),var(--accent2),var(--accent))`; requestAnimationFrame(spin); }
+    spin();
+  }
+
+  /* ── PAGE LOAD ── */
+  document.body.style.opacity='0';
+  window.addEventListener('load', () => { document.body.style.transition='opacity 0.5s ease'; document.body.style.opacity='1'; });
+
+});
