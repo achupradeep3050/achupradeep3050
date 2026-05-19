@@ -1,8 +1,4 @@
-<!---
-  🚀 ACHU PRADEEP — GitHub Profile README
-  Dark Luxury Theme · Gold Accents · Premium Design
-  Last Updated: 2026-05-20
---->
+<!---- 🚀 ACHU PRADEEP · GitHub Profile README ---->
 <div align="center">
 
 <!-- Profile Avatar -->
@@ -12,8 +8,7 @@
   <img
     src="https://github.com/achupradeep3050.png?size=200&set_icon=true"
     alt="Achu Pradeep"
-    width="140"
-    height="140"
+    width="140" height="140"
     style="border-radius:50%;border:4px solid #f5c542;padding:2px;background:#060610;"
   />
 </picture>
@@ -26,11 +21,11 @@
   />
 </p>
 
-<!-- Status Badge -->
+<!-- Status Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-f5c542?style=flat-square&logo=briefcase&logoColor=000">
   <img src="https://img.shields.io/badge/Location-Aluva,_Kerala,_India-f5c542?style=flat-square&logo=location&logoColor=000">
-  <img src="https://img.shields.io/badge/Linux-RHCSA_%26_RHCE-170-179-113-f5c542?style=flat-square&logo=redhat&logoColor=93371a">
+  <img src="https://img.shields.io/badge/Linux-RHCSA_%26_RHCE-170--179-113-f5c542?style=flat-square&logo=redhat&logoColor=93371a">
 </p>
 
 </div>
@@ -53,19 +48,19 @@
 
 ## 🛠️ Tech Stack
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Linux-f5c542?style=flat-square&logo=linux&logoColor=000" />
-  <img src="https://img.shields.io/badge/Python-f5c542?style=flat-square&logo=python&logoColor=3776AB" />
-  <img src="https://img.shields.io/badge/Bash-f5c542?style=flat-square&logo=gnubash&logoColor=4EAA25" />
-  <img src="https://img.shields.io/badge/Jenkins-f5c542?style=flat-square&logo=jenkins&logoColor=D33833" />
-  <img src="https://img.shields.io/badge/Docker-f5c542?style=flat-square&logo=docker&logoColor=2496ED" />
-  <img src="https://img.shields.io/badge/Ansible-f5c542?style=flat-square&logo=ansible&logoColor=EE0000" />
-  <img src="https://img.shields.io/badge/CrewAI-f5c542?style=flat-square&logo=robot&logoColor=000" />
-  <img src="https://img.shields.io/badge/LangChain-f5c542?style=flat-square&logo=chain&logoColor=000" />
-  <img src="https://img.shields.io/badge/Apache_NiFi-f5c542?style=flat-square&logo=apache&logoColor=EF4B24" />
-  <img src="https://img.shields.io/badge/Zabbix-f5c542?style=flat-square&logo=zabbix&logoColor=000" />
-  <img src="https://img.shields.io/badge/OpenVAS-f5c542?style=flat-square&logo=shield&logoColor=000" />
-  <img src="https://img.shields.io/badge/AWS_S3-f5c542?style=flat-square&logo=amazonaws&logoColor=569A31" />
+<p>
+  <img src="https://img.shields.io/badge/Linux-f5c542?style=flat-square&logo=linux&logoColor=000">
+  <img src="https://img.shields.io/badge/Python-f5c542?style=flat-square&logo=python&logoColor=3776AB">
+  <img src="https://img.shields.io/badge/Bash-f5c542?style=flat-square&logo=gnubash&logoColor=4EAA25">
+  <img src="https://img.shields.io/badge/Jenkins-f5c542?style=flat-square&logo=jenkins&logoColor=D33833">
+  <img src="https://img.shields.io/badge/Docker-f5c542?style=flat-square&logo=docker&logoColor=2496ED">
+  <img src="https://img.shields.io/badge/Ansible-f5c542?style=flat-square&logo=ansible&logoColor=EE0000">
+  <img src="https://img.shields.io/badge/CrewAI-f5c542?style=flat-square&logoColor=000">
+  <img src="https://img.shields.io/badge/LangChain-f5c542?style=flat-square&logoColor=000">
+  <img src="https://img.shields.io/badge/Apache_NiFi-f5c542?style=flat-square&logo=apache&logoColor=EF4B24">
+  <img src="https://img.shields.io/badge/Zabbix-f5c542?style=flat-square&logo=zabbix&logoColor=000">
+  <img src="https://img.shields.io/badge/OpenVAS-f5c542?style=flat-square&logoColor=000">
+  <img src="https://img.shields.io/badge/AWS_S3-f5c542?style=flat-square&logo=amazonaws&logoColor=569A31">
 </p>
 
 <details>
@@ -110,23 +105,18 @@
 
 <p align="center">
 
-<img src="https://komarev.com/ghpvc/?username=achupradeep3050&color=f5c542&label=Profile+Views&style=flat-square" />
-&nbsp;
-<img src="https://img.shields.io/github/followers/achupradeep3050?color=f5c542&label=Followers&style=flat-square" />
-&nbsp;
-<img src="https://img.shields.io/github/stars/achupradeep3050?color=f5c542&label=Total+Stars&style=flat-square" />
+| Metric | Badge |
+|---|---|
+| **Profile Views** | <img src="https://komarev.com/ghpvc/?username=achupradeep3050&color=f5c542&label=Profile+Views&style=flat-square"/> |
+| **Followers** | <img src="https://img.shields.io/github/followers/achupradeep3050?color=f5c542&label=Followers&style=flat-square"/> |
+| **Total Stars** | <img src="https://img.shields.io/github/stars/achupradeep3050?color=f5c542&label=Total+Stars&style=flat-square"/> |
+| **Public Repos** | <img src="https://img.shields.io/github/repositories/achupradeep3050?color=f5c542&label=Public+Repos&style=flat-square"/> |
 
 </p>
 
-<p align="center">
+---
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=achupradeep3050&show_icons=true&theme=midnight-purple&bg_color=0a0a18&icon_color=f5c542&title_color=f5c542&text_color=e8e8f0&border_radius=16&border_color=f5c542&include_all_commits=true" />
-
-&nbsp;
-
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=achupradeep3050&layout=compact&theme=midnight-purple&bg_color=0a0a18&icon_color=f5c542&title_color=f5c542&text_color=e8e8f0&border_radius=16&border_color=f5c542" />
-
-</p>
+## 🔥 GitHub Streak
 
 <p align="center">
 
