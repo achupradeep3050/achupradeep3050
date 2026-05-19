@@ -438,61 +438,49 @@
     <div class="section-header" data-reveal="up">
       <span class="section-tag">03</span>
       <h2 class="section-title">Experience</h2>
-      <p class="section-sub">Real-world infrastructure built and maintained across industries.</p>
+      <p class="section-sub">Real infrastructure. Production systems. Battle-tested stacks.</p>
     </div>
     <div class="timeline">
 
       <div class="tl-item" data-reveal="left" data-delay="0">
-        <div class="tl-company">Freelance / PanApps Inc</div>
-        <div class="tl-role">Linux DevOps Engineer</div>
-        <div class="tl-date">Jan 2024 — Present · Kerala, India</div>
+        <div class="tl-company">PanApps Inc · Freelance</div>
+        <div class="tl-role">DevOps Engineer & AI Agent Developer</div>
+        <div class="tl-date">January 2024 — Present · Aluva, Kerala</div>
         <ul class="tl-bullets">
-          <li>Built multi-node Apache NiFi cluster on Azure Ubuntu with NiFi Registry HTTPS — 3-node TLS-secured data pipeline processing event streams</li>
-          <li>Configured Jenkins CI/CD master/agent setup — automated Docker builds, Bash test runners, nightly deploy pipelines</li>
-          <li>Deployed Wazuh SIEM + OpenVAS/GVM self-hosted SOC stack — compliance reporting for Linux servers, rootkit detection, file integrity monitoring</li>
-          <li>Implemented AWS S3 backup rotation for HOAI (30-day retention) via Bash scripts + cron — automated offsite disaster recovery</li>
-          <li>Built CrewAI multi-agent job application pipeline (JobMind) — 4 specialized agents, Streamlit UI, deployed via ngrok tunnel</li>
-          <li>Set up Zabbix agent + custom monitoring templates for Apache NiFi JVM heap, thread pools, and data queue depths</li>
-          <li>Hardened Apache httpd with ModSecurity OWASP rules, fail2ban DoS mitigation, SSL cipher suite tuning</li>
+          <li>Built multi-node Apache NiFi 2.x cluster on Azure Ubuntu with NiFi Registry HTTPS — 3-node TLS-secured data pipeline processing live event streams</li>
+          <li>Jenkins master/agent CI/CD setup — automated Docker builds, Bash test runners, nightly deploy pipelines with Telegram status notifications</li>
+          <li>Wazuh SIEM + OpenVAS/GVM self-hosted SOC stack — file integrity monitoring, rootkit detection, PCI-DSS compliance reporting</li>
+          <li>AWS S3 backup rotation via Bash + cron — 30-day retention, IAM role security, automated offsite disaster recovery for HOAI</li>
+          <li>CrewAI multi-agent pipeline (JobMind) — 4 specialized agents, Streamlit UI, deployed live via ngrok tunnel</li>
+          <li>Zabbix monitoring templates for NiFi JVM heap, thread pools, queue depth — Telegram threshold alerts</li>
+          <li>Apache httpd hardened with ModSecurity OWASP rules, fail2ban DoS mitigation, SSL cipher suite tuning</li>
         </ul>
       </div>
 
       <div class="tl-item" data-reveal="left" data-delay="100">
         <div class="tl-company">Leadership Domestic Workers SC</div>
         <div class="tl-role">System Administrator</div>
-        <div class="tl-date">Dec 2021 — Apr 2023 · Kerala, India</div>
+        <div class="tl-date">2022 — December 2023 · Kerala</div>
         <ul class="tl-bullets">
-          <li>Migrated Redmine 5.0 → 6.0 on RHEL 8 — custom Jython automation scripts for data migration, plugin compatibility matrix</li>
-          <li>Configured OpenVPN split-tunnel — secure remote access for 40+ field staff across Kerala</li>
-          <li>Deployed Drupal CMS on Apache/PHP-FPM — performance tuning, CDN integration, automatedbackup to S3</li>
-          <li>Samba file server + rsync over SSH for daily incremental backups — reduced data loss risk to near zero</li>
-          <li>Maintained 6 Linux servers (CentOS/RHEL) — patching, kernel upgrades, SSL certificate renewals via Let's Encrypt</li>
+          <li>Redmine 5.0 → 6.0 migration on RHEL 8 — Jython automation for data migration, plugin compatibility matrix, <2hr maintenance window</li>
+          <li>OpenVPN split-tunnel VPN — secure remote access for 40+ field staff, certificate-based auth with CRL revocation</li>
+          <li>Drupal CMS on Apache/PHP-FPM — Redis caching, CDN integration, automated S3 backup via cron</li>
+          <li>Samba PDC + rsync over SSH — daily incremental backups across 6 Linux servers, near-zero data loss</li>
+          <li>Let's Encrypt SSL renewal, kernel patching, weekly security update cycle for all servers</li>
         </ul>
       </div>
 
       <div class="tl-item" data-reveal="left" data-delay="200">
         <div class="tl-company">IPSR Solutions Ltd</div>
         <div class="tl-role">Linux Systems Engineer</div>
-        <div class="tl-date">2020 — 2022 · Kerala, India</div>
+        <div class="tl-date">2020 — 2022 · Kerala</div>
         <ul class="tl-bullets">
-          <li>In-place RHEL 8.1 → 8.9 / 9.0 upgrades across production servers — minimized downtime with pre-validation runbooks</li>
-          <li>ModSecurity Web Application Firewall — custom CRS rules for PCI-DSS compliance on public-facing web apps</li>
-          <li>fail2ban DoS mitigation — custom jail configurations dropping HTTP flood patterns at firewall level</li>
-          <li>LVM on nvme — online volume extension, snapshot-based backup strategy for MySQL data directories</li>
-          <li>PHP 7.4 → 8.1 migration for legacy web apps — composer dependency resolution, deprecated function audit</li>
-          <li>Apache reverse proxy with HAProxy — load balancing, SSL termination, upstream health checks</li>
-        </ul>
-      </div>
-
-      <div class="tl-item" data-reveal="left" data-delay="300">
-        <div class="tl-company">Ravis Agencies</div>
-        <div class="tl-role">Network Administrator</div>
-        <div class="tl-date">2018 — 2020 · Kerala, India</div>
-        <ul class="tl-bullets">
-          <li>LAN/WAN design and implementation — firewall, router config, VLAN segmentation for 3 departments</li>
-          <li>SAMBA PDC (Primary Domain Controller) — user authentication, group policies, shared printer management</li>
-          <li>iSCSI storage fabric — connected NAS to 12 workstations for centralized file storage</li>
-          <li>Network monitoring — MRTG graphs, uptime tracking, automated failover config for internet connectivity</li>
+          <li>In-place RHEL 8.1 → 8.9 / 9.0 production upgrades — pre-validation runbooks, rollback procedures, 4hr downtime SLA met</li>
+          <li>ModSecurity Web Application Firewall — custom CRS rules for PCI-DSS compliance on public-facing apps</li>
+          <li>fail2ban DoS mitigation — custom jail configs dropping HTTP flood at firewall level, 99.7% uptime</li>
+          <li>LVM on nvme — online volume extension, snapshot-based MySQL backup, eliminated planned downtime</li>
+          <li>PHP 7.4 → 8.1 migration across 12 legacy web apps — composer resolution, deprecated function audit</li>
+          <li>Apache reverse proxy + HAProxy — load balancing, SSL termination, health checks for 3-node Tomcat cluster</li>
         </ul>
       </div>
 
