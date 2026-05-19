@@ -1,186 +1,94 @@
 /* ═══════════════════════════════════════════════════════════
-   ACHU PRADEEP — PORTFOLIO v3 · script.js
-   Features: Scroll progress · Parallax · Tab filtering
-              Continuous reveals · Nav state
+   ACHU PRADEEP — PORTFOLIO v6 script.js
+   Features: Particles · 3D tilt · Glassmorphism · Reveals
 ═══════════════════════════════════════════════════════════ */
 
 'use strict';
 
-// ─── SCROLL PROGRESS TRACKER ───
-const bgMesh = document.getElementById('bgMesh');
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  // Parallax factor: background moves at 40% of scroll speed
-  if (bgMesh) bgMesh.style.transform = `translateY(${y * 0.35}px)`;
-  // Switch to dark theme after 80px scroll
-  if (y > 80) document.body.classList.add('scrolled');
-  else        document.body.classList.remove('scrolled');
-}, { passive: true });
+// ─── PARTICLES GENERATOR ───
+(function generateParticles() {
+  const container = document.getElementById('particles');
+  if (!container) return;
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 3 + 1;
+    p.style.cssText = [
+      `left:${Math.random() * 100}%`,
+      `bottom:${Math.random() * 30}%`,
+      `width:${size}px`,
+      `height:${size}px`,
+      `animation-duration:${Math.random() * 15 + 10}s`,
+      `animation-delay:${Math.random() * 20}s`,
+    ].join(';');
+    container.appendChild(p);
+  }
+})();
 
-// ─── INTERSECTION OBSERVER — CONTINUOUS SCROLL REVEALS ───
+// ─── SCROLL REVEAL ───
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      const el    = entry.target;
-      const delay = parseInt(el.dataset.delay) || 0;
-      const type  = el.dataset.reveal || 'up';
-
-      setTimeout(() => {
-        el.classList.add('revealed');
-        // Remove from observer after first reveal (avoid re-animation)
-        revealObserver.unobserve(el);
-      }, delay);
+      const delay = parseInt(entry.target.dataset.delay) || 0;
+      setTimeout(() => entry.target.classList.add('revealed'), delay);
+      revealObserver.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.12,
-  rootMargin: '0px 0px -60px 0px'
-});
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('[data-reveal]').forEach(el => {
-  revealObserver.observe(el);
-});
+document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
 
-// ─── PROJECT TAB FILTERING ───
-function filterProjects(category) {
-  // Update tab button states
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.textContent.trim().toLowerCase() === category ||
-      (category === 'all' && btn.textContent.trim().toLowerCase() === 'all'));
-  });
-
-  // Filter cards
-  document.querySelectorAll('.tab-item').forEach(card => {
-    const cat = card.dataset.category;
-    const show = category === 'all' || cat === category;
-    if (show) {
-      card.style.display = '';
-      // Re-trigger reveal animation for newly shown cards
-      card.classList.remove('revealed');
-      setTimeout(() => {
-        revealObserver.observe(card);
-        card.classList.add('revealed');
-      }, 50);
-    } else {
-      card.style.display = 'none';
-    }
-  });
-}
-
-// Expose globally for inline onclick
-window.filterProjects = filterProjects;
-
-// ─── NAV ACTIVE LINK ───
-const navLinks  = document.querySelectorAll('.nav-links a:not(.nav-cta)');
-const sections  = document.querySelectorAll('section[id]');
-
-function updateNavActive() {
-  let current = '';
-  sections.forEach(section => {
-    const top = section.offsetTop - 120;
-    if (window.scrollY >= top) current = section.id;
-  });
-  navLinks.forEach(link => {
-    link.style.color = '';
-    if (link.getAttribute('href') === `#${current}`) {
-      link.style.color = 'var(--accent-cyan)';
-    }
-  });
-}
-
-window.addEventListener('scroll', updateNavActive, { passive: true });
-updateNavActive();
-
-// ─── NAVBAR SCROLL BEHAVIOR ───
-let lastScroll = 0;
-const navbar   = document.querySelector('.navbar');
+// ─── NAVBAR SCROLL BEHAVIOR ──��
+let lastScrollY = 0;
+const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
-  const current = window.scrollY;
-  if (current > lastScroll && current > 300) {
+  const y = window.scrollY;
+
+  // Glass effect
+  navbar.classList.toggle('scrolled', y > 60);
+
+  // Hide on scroll down
+  if (y > lastScrollY && y > 300) {
     navbar.style.transform = 'translateY(-100%)';
     navbar.style.transition = 'transform 0.3s ease';
   } else {
     navbar.style.transform = 'translateY(0)';
+    navbar.style.transition = 'transform 0.3s ease';
   }
-  lastScroll = current;
+
+  lastScrollY = y;
 }, { passive: true });
 
-// ─── FLOATING CARDS PARALLAX ───
-const floatCards = document.querySelectorAll('.hero-float-card');
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  floatCards.forEach((card, i) => {
-    const speed = i === 0 ? 0.08 : 0.05;
-    card.style.transform = `translateY(${y * speed}px)`;
+// ─── PROJECT FILTER TABS ───
+function filterProjects(category) {
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active',
+      b.textContent.trim().toLowerCase() === category ||
+      (category === 'all' && b.textContent.trim() === 'All')
+    );
   });
-}, { passive: true });
 
-// ─── TYPING EFFECT IN HERO (optional if not done in CSS) ───
-
-// ─── FORM SUBMIT HANDLER ───
-function handleFormSubmit(e) {
-  e.preventDefault();
-  const form    = e.target;
-  const btn     = form.querySelector('.form-submit');
-  const origTxt = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-  btn.style.background = 'linear-gradient(135deg, #00e676, #00bcd4)';
-  setTimeout(() => {
-    btn.innerHTML = origTxt;
-    btn.style.background = '';
-    form.reset();
-  }, 3000);
-}
-window.handleFormSubmit = handleFormSubmit;
-
-// ─── SMOOTH SCROLL FOR ANCHOR LINKS ───
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (!target) return;
-    const top = target.offsetTop - 80;
-    window.scrollTo({ top, behavior: 'smooth' });
-  });
-});
-
-// ─── STAGGERED ENTRY FOR SKILL CARDS ON LOAD ───
-window.addEventListener('load', () => {
-  // Trigger reveals for above-fold elements
-  setTimeout(() => {
-    document.querySelectorAll('[data-reveal]').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight) {
-        revealObserver.observe(el);
-      }
-    });
-  }, 200);
-});
-
-// ─── COUNTER ANIMATION FOR STATS ───
-function animateCounters() {
-  document.querySelectorAll('[data-counter]').forEach(el => {
-    const target = parseInt(el.dataset.counter);
-    const dur    = 1500;
-    const step   = target / (dur / 16);
-    let current  = 0;
-    const tick   = () => {
-      current = Math.min(current + step, target);
-      el.textContent = Math.floor(current);
-      if (current < target) requestAnimationFrame(tick);
-    };
-    tick();
+  document.querySelectorAll('.tab-item').forEach(item => {
+    const show = category === 'all' || item.dataset.category === category;
+    if (show) {
+      item.classList.remove('hidden');
+      item.classList.remove('revealed');
+      setTimeout(() => revealObserver.observe(item), 50);
+    } else {
+      item.classList.add('hidden');
+    }
   });
 }
+window.filterProjects = filterProjects;
 
-// ─── CARD HOVER PARALLAX (subtle) ───
-document.querySelectorAll('.skill-card, .proj-card, .proj-featured').forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const rect   = card.getBoundingClientRect();
-    const x      = (e.clientX - rect.left) / rect.width  - 0.5;
-    const y      = (e.clientY - rect.top)  / rect.height - 0.5;
-    card.style.transform = `perspective(800px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg) translateY(-4px)`;
+// ─── 3D CARD TILT ───
+document.querySelectorAll('.skill-card, .exp-card, .tab-item, .proj-featured').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width  - 0.5;
+    const y = (e.clientY - rect.top)  / rect.height - 0.5;
+    card.style.transform = `perspective(800px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg) translateY(-6px)`;
     card.style.transition = 'transform 0.1s ease';
   });
   card.addEventListener('mouseleave', () => {
@@ -189,4 +97,51 @@ document.querySelectorAll('.skill-card, .proj-card, .proj-featured').forEach(car
   });
 });
 
-console.log('✅ Portfolio v3 loaded — scroll reveals, parallax, filtering active');
+// ─── FLOAT BADGE PARALLAX ───
+const floatBadges = document.querySelectorAll('.float-badge');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  floatBadges.forEach((badge, i) => {
+    const speed = [0.06, 0.04, 0.08][i % 3];
+    badge.style.transform = `translateY(${y * speed}px)`;
+  });
+}, { passive: true });
+
+// ─── SMOOTH SCROLL FOR ANCHORS ───
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+    window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+  });
+});
+
+// ─── COUNTER ANIMATION ───
+function animateCounters() {
+  document.querySelectorAll('[data-counter]').forEach(el => {
+    const target = parseInt(el.dataset.counter);
+    const dur    = 1200;
+    const step   = target / (dur / 16);
+    let current  = 0;
+    const tick   = () => {
+      current = Math.min(current + step, target);
+      el.textContent = Math.floor(current) + (target > 9 ? '+' : '');
+      if (current < target) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+}
+
+// ─── LAUNCH ───
+window.addEventListener('load', () => {
+  setTimeout(animateCounters, 400);
+  setTimeout(() => {
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) revealObserver.observe(el);
+    });
+  }, 200);
+});
+
+console.log('✅ Portfolio v6 — particles, 3D tilt, glassmorphism, smooth scroll active');
