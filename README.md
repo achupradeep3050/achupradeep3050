@@ -25,7 +25,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-f5c542?style=flat-square&logo=briefcase&logoColor=000">
   <img src="https://img.shields.io/badge/Location-Aluva,_Kerala,_India-f5c542?style=flat-square&logo=location&logoColor=000">
-  <img src="https://img.shields.io/badge/Linux-RHCSA_%26_RHCE-170--179-113-f5c542?style=flat-square&logo=redhat&logoColor=93371a">
+  <img src="https://img.shields.io/badge/RHCSA_RHCE-Certified_170--179-113-f5c542?style=flat-square&logo=red-hat">
 </p>
 
 </div>
@@ -110,7 +110,7 @@
 | **Profile Views** | <img src="https://komarev.com/ghpvc/?username=achupradeep3050&color=f5c542&label=Profile+Views&style=flat-square"/> |
 | **Followers** | <img src="https://img.shields.io/github/followers/achupradeep3050?color=f5c542&label=Followers&style=flat-square"/> |
 | **Total Stars** | <img src="https://img.shields.io/github/stars/achupradeep3050?color=f5c542&label=Total+Stars&style=flat-square"/> |
-| **Public Repos** | <img src="https://img.shields.io/github/repositories/achupradeep3050?color=f5c542&label=Public+Repos&style=flat-square"/> |
+| **Public Repos** | <img src="https://img.shields.io/badge/dynamic/json?color=f5c542&label=Public+Repos&query=$.public_repos&url=https://api.github.com/users/achupradeep3050&style=flat-square"/> |
 
 </p>
 
