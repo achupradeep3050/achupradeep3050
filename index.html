@@ -5,600 +5,1040 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Achu Pradeep | Linux DevOps Engineer & AI Agent Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@heroicons/fontawesome@6.4.0/browser/svg/index.js" defer></script>
+<style>
+/* ═══════════════════════════════════════════════════════════
+   ACHU PRADEEP — PORTFOLIO v4
+   Design: Editorial · Main-page hero aesthetic · No cards
+   Palette: Near-black #08090f · Sky blue #38bdf8 · White
+═══════════════════════════════════════════════════════════ */
+
+:root {
+  --bg:        #08090f;
+  --surface:   #0d1117;
+  --border:    #1e2736;
+  --accent:    #38bdf8;
+  --accent2:   #0ea5e9;
+  --muted:     #64748b;
+  --subtle:    #94a3b8;
+  --text:      #e2e8f0;
+  --bright:   #f1f5f9;
+  --tag-bg:    rgba(56,189,248,0.08);
+  --tag-col:   #7dd3fc;
+  --glow:      rgba(56,189,248,0.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* ── NAVIGATION ── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0 2rem; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(8,9,15,0.82);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+.nav.hidden { transform: translateY(-100%); }
+.nav-logo {
+  font-size: 1rem; font-weight: 700; color: var(--bright);
+  letter-spacing: -0.02em; text-decoration: none;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 0.25rem; list-style: none; }
+.nav-links a {
+  font-size: 0.8rem; font-weight: 500; color: var(--muted);
+  text-decoration: none; padding: 6px 14px; border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-links a:hover, .nav-links a.active {
+  color: var(--accent); background: var(--tag-bg);
+}
+.nav-links a.primary {
+  color: var(--accent); border: 1px solid rgba(56,189,248,0.3);
+  background: var(--tag-bg);
+}
+.nav-links a.primary:hover { background: rgba(56,189,248,0.15); }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+  padding: 80px 2rem 60px;
+}
+
+.hero-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 60% at 20% 50%, rgba(56,189,248,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 30%, rgba(14,165,233,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 60% at 60% 80%, rgba(56,189,248,0.04) 0%, transparent 50%);
+}
+
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 80%);
+}
+
+.hero-orb {
+  position: absolute; border-radius: 50%;
+  filter: blur(80px); pointer-events: none;
+  animation: orbFloat 12s ease-in-out infinite alternate;
+}
+.hero-orb-1 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(56,189,248,0.12), transparent 70%);
+  top: -100px; left: -100px;
+}
+.hero-orb-2 {
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(14,165,233,0.08), transparent 70%);
+  bottom: 0; right: 0;
+  animation-delay: -6s;
+}
+@keyframes orbFloat {
+  0%   { transform: translate(0,0) scale(1); }
+  100% { transform: translate(30px, 20px) scale(1.08); }
+}
+
+.hero-content { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; width: 100%; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--tag-bg); border: 1px solid rgba(56,189,248,0.2);
+  border-radius: 50px; padding: 6px 16px;
+  font-size: 0.75rem; font-weight: 500; color: var(--accent);
+  margin-bottom: 1.5rem; letter-spacing: 0.05em;
+}
+.hero-badge .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 8px var(--accent);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+.hero h1 {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 800; line-height: 1.05;
+  letter-spacing: -0.04em; color: var(--bright);
+  margin-bottom: 1rem;
+}
+.hero h1 .accent { color: var(--accent); }
+.hero-sub {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-weight: 400; color: var(--muted);
+  max-width: 580px; margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+.hero-sub strong { color: var(--subtle); font-weight: 500; }
+
+.hero-meta {
+  display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+}
+.hero-meta-item { display: flex; align-items: center; gap: 8px; }
+.hero-meta-item .icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: var(--tag-bg); border: 1px solid rgba(56,189,248,0.15);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent); font-size: 0.8rem;
+}
+.hero-meta-item .label {
+  font-size: 0.7rem; color: var(--muted); text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.hero-meta-item .value {
+  font-size: 0.85rem; color: var(--text); font-weight: 500;
+}
+
+.hero-tags {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2.5rem;
+}
+.tag {
+  background: var(--tag-bg); border: 1px solid rgba(56,189,248,0.12);
+  border-radius: 6px; padding: 5px 12px;
+  font-size: 0.75rem; font-weight: 500; color: var(--tag-col);
+  letter-spacing: 0.02em;
+}
+
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 24px; border-radius: 10px;
+  font-size: 0.85rem; font-weight: 600;
+  text-decoration: none; transition: all 0.2s;
+  cursor: pointer; border: none;
+}
+.btn-primary {
+  background: var(--accent); color: #020617;
+}
+.btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent; color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+.hero-scroll {
+  position: absolute; bottom: 2rem; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  color: var(--muted); font-size: 0.7rem; text-transform: uppercase;
+  letter-spacing: 0.1em; text-decoration: none;
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+@keyframes scrollBounce {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ── SECTION BASE ── */
+.section { padding: 100px 2rem; max-width: 1100px; margin: 0 auto; }
+.section-divider {
+  height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent);
+  max-width: 1100px; margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; font-weight: 500;
+  color: var(--accent); text-transform: uppercase;
+  letter-spacing: 0.15em; margin-bottom: 12px;
+}
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800; letter-spacing: -0.03em;
+  color: var(--bright); line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.section-desc {
+  font-size: 1rem; color: var(--muted);
+  max-width: 560px; line-height: 1.7;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── SKILLS ── */
+.skills-section { background: var(--surface); }
+.skills-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1px; margin-top: 3rem;
+  border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+}
+.skill-group {
+  padding: 28px 32px;
+  background: var(--bg);
+  transition: background 0.2s;
+}
+.skill-group:hover { background: rgba(56,189,248,0.03); }
+.skill-group-title {
+  font-size: 0.65rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--accent);
+  margin-bottom: 14px;
+}
+.skill-group p {
+  font-size: 0.9rem; color: var(--text); line-height: 1.8;
+}
+.skill-group p .hl {
+  color: var(--subtle); font-weight: 500;
+  border-bottom: 1px dashed rgba(148,163,184,0.3);
+}
+
+/* ── EXPERIENCE ── */
+.experience-section {}
+.timeline { margin-top: 3rem; }
+.tl-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0 40px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+.tl-item:last-child { border-bottom: none; }
+.tl-left {}
+.tl-company {
+  font-size: 0.95rem; font-weight: 700;
+  color: var(--bright); margin-bottom: 4px;
+}
+.tl-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; color: var(--accent);
+  letter-spacing: 0.05em; margin-bottom: 8px;
+}
+.tl-type {
+  display: inline-block;
+  font-size: 0.65rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 3px 10px; border-radius: 4px;
+  background: var(--tag-bg);
+  color: var(--tag-col);
+}
+.tl-right {}
+.tl-role {
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--subtle); margin-bottom: 16px;
+}
+.tl-bullets { list-style: none; }
+.tl-bullets li {
+  position: relative;
+  padding-left: 20px; margin-bottom: 8px;
+  font-size: 0.9rem; color: var(--text); line-height: 1.6;
+}
+.tl-bullets li::before {
+  content: '';
+  position: absolute; left: 0; top: 10px;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+.tl-bullets li::after {
+  content: '';
+  position: absolute; left: 2px; top: 16px;
+  width: 1px; height: calc(100% - 6px);
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  opacity: 0.2;
+}
+.tl-bullets li:last-child::after { display: none; }
+
+/* ── PROJECTS ── */
+.projects-section { background: var(--surface); }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1px; margin-top: 3rem;
+  border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+}
+.project-item {
+  padding: 32px 36px;
+  background: var(--bg);
+  transition: background 0.25s ease;
+}
+.project-item:hover { background: rgba(56,189,248,0.025); }
+.project-top {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 16px;
+  margin-bottom: 12px;
+}
+.project-icon {
+  width: 42px; height: 42px; border-radius: 10px;
+  background: var(--tag-bg); border: 1px solid rgba(56,189,248,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; flex-shrink: 0;
+}
+.project-name {
+  font-size: 1rem; font-weight: 700;
+  color: var(--bright); margin-bottom: 4px;
+}
+.project-cat { font-size: 0.72rem; color: var(--accent); font-weight: 500; }
+.project-desc {
+  font-size: 0.88rem; color: var(--muted);
+  line-height: 1.65; margin-bottom: 16px;
+}
+.project-tech {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
+}
+.tech-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem; color: var(--muted);
+  background: rgba(100,116,139,0.1);
+  border: 1px solid rgba(100,116,139,0.15);
+  padding: 3px 10px; border-radius: 4px;
+}
+.project-links { display: flex; gap: 10px; }
+.project-link {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.75rem; font-weight: 600; text-decoration: none;
+  padding: 6px 14px; border-radius: 7px;
+  transition: all 0.2s;
+}
+.project-link.github {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  color: var(--subtle);
+}
+.project-link.github:hover { border-color: var(--subtle); color: var(--text); }
+.project-link.live {
+  background: var(--tag-bg);
+  border: 1px solid rgba(56,189,248,0.2);
+  color: var(--accent);
+}
+.project-link.live:hover { background: rgba(56,189,248,0.12); }
+
+/* ── OSS ── */
+.oss-section {}
+.oss-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1px; margin-top: 3rem;
+  border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+}
+.oss-item {
+  padding: 28px 32px; background: var(--bg);
+  transition: background 0.2s;
+}
+.oss-item:hover { background: rgba(56,189,248,0.025); }
+.oss-name {
+  font-size: 1rem; font-weight: 700;
+  color: var(--bright); margin-bottom: 4px;
+}
+.oss-stars {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.78rem; font-weight: 600;
+  color: #fbbf24; margin-bottom: 10px;
+}
+.oss-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+
+/* ── FOOTER ── */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 48px 2rem;
+  text-align: center;
+}
+.footer-inner { max-width: 1100px; margin: 0 auto; }
+.footer-links { display: flex; justify-content: center; gap: 6px; flex-wrap: wrap; margin-bottom: 24px; }
+.footer-links a {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.8rem; font-weight: 500;
+  color: var(--muted); text-decoration: none;
+  padding: 8px 16px; border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+.footer-links a:hover { color: var(--accent); border-color: rgba(56,189,248,0.3); }
+.footer-copy {
+  font-size: 0.75rem; color: var(--muted);
+}
+.footer-copy span { color: var(--accent); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero { padding: 80px 1.25rem 50px; }
+  .hero h1 { font-size: 2.2rem; }
+  .section { padding: 60px 1.25rem; }
+  .tl-item { grid-template-columns: 1fr; gap: 8px; }
+  .tl-left { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .oss-grid { grid-template-columns: 1fr; }
+  .hero-meta { gap: 1rem; }
+}
+</style>
 </head>
 <body>
 
-<!-- ═══ FIXED BACKGROUND LAYER ═══ -->
-<div class="bg-mesh" id="bgMesh">
-  <div class="mesh-hero"></div>
-  <div class="mesh-dark"></div>
-  <div class="bg-dot-grid"></div>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-</div>
-
-<!-- ═══ NAVBAR ═══ -->
-<nav class="navbar">
-  <div class="nav-logo">Achu<span>.</span>dev</div>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">ach<span>u</span>.</a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="https://github.com/achupradeep3050" target="_blank" class="nav-cta">
-      <i class="fab fa-github"></i> GitHub</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#oss">OSS</a></li>
+    <li><a href="https://github.com/achupradeep3050" target="_blank" class="primary">GitHub →</a></li>
   </ul>
 </nav>
 
-<!-- ═══ HERO ═══ -->
-<section class="section section--hero hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span></span> Available for Projects
-        </div>
-        <h1 class="hero-title">
-          Linux DevOps<br>
-          <span class="accent">AI Agent</span> Engineer
-        </h1>
-        <p class="hero-subtitle">
-          4+ years building production infrastructure on RHEL · Automating with Jenkins, Apache NiFi & Bash · Shipping AI agents with CrewAI & LangChain
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary">
-            <i class="fas fa-folder-open"></i> View Projects
-          </a>
-          <a href="https://github.com/achupradeep3050" target="_blank" class="btn-secondary">
-            <i class="fab fa-github"></i> GitHub Profile
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-value">4+</div>
-            <div class="hero-stat-label">Years Linux Admin</div>
-          </div>
-          <div>
-            <div class="hero-stat-value">9</div>
-            <div class="hero-stat-label">Projects Shipped</div>
-          </div>
-          <div>
-            <div class="hero-stat-value">12+</div>
-            <div class="hero-stat-label">Technologies</div>
-          </div>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="dot"></div>
+      Available for projects
+    </div>
+    <h1>
+      Linux DevOps<br>
+      <span class="accent">AI Agent</span> Engineer
+    </h1>
+    <p class="hero-sub">
+      4+ years building production infrastructure — <strong>RHEL/CentOS</strong>,
+      <strong>Jenkins CI/CD</strong>, <strong>Apache NiFi</strong>, <strong>Wazuh SIEM</strong>.
+      Currently crafting autonomous agent systems with <strong>CrewAI</strong> and
+      algorithmic <strong>XAUUSD trading</strong> bots using SMC/ICT methodology.
+    </p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="icon">⌨</div>
+        <div>
+          <div class="label">Focus</div>
+          <div class="value">Linux · AI Agents · Trading</div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-photo-wrap">
-          <div class="hero-photo-glow"></div>
-          <img src="profile-photo.jpg" alt="Achu Pradeep" loading="eager">
-          <div class="hero-float-card hfc-1">
-            <div class="hfc-icon green"><i class="fas fa-shield-halved"></i></div>
-            <div>
-              <div style="font-weight:800;color:var(--hero-text)">RHCSA + RHCE</div>
-              <div style="font-size:0.65rem;color:var(--hero-muted);font-weight:600">Red Hat Certified</div>
-            </div>
-          </div>
-          <div class="hero-float-card hfc-2">
-            <div class="hfc-icon blue"><i class="fas fa-robot"></i></div>
-            <div>
-              <div style="font-weight:800;color:var(--hero-text)">AI Agents</div>
-              <div style="font-size:0.65rem;color:var(--hero-muted);font-weight:600">CrewAI + LangChain</div>
-            </div>
-          </div>
+      <div class="hero-meta-item">
+        <div class="icon">◎</div>
+        <div>
+          <div class="label">Location</div>
+          <div class="value">Aluva, Kerala, India</div>
         </div>
       </div>
+      <div class="hero-meta-item">
+        <div class="icon">⚡</div>
+        <div>
+          <div class="label">Certified</div>
+          <div class="value">RHCSA + RHCE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-tags">
+      <span class="tag">RHEL / CentOS</span>
+      <span class="tag">Jenkins CI/CD</span>
+      <span class="tag">Apache NiFi</span>
+      <span class="tag">Wazuh SIEM</span>
+      <span class="tag">CrewAI</span>
+      <span class="tag">Pine Script v5</span>
+      <span class="tag">XAUUSD Trading</span>
+      <span class="tag">Bash Scripting</span>
+      <span class="tag">Ansible</span>
+      <span class="tag">Docker</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="https://github.com/achupradeep3050" target="_blank" class="btn btn-outline">GitHub Profile</a>
+    </div>
+  </div>
+
+  <a href="#skills" class="hero-scroll">scroll</a>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<section class="section skills-section" id="skills">
+  <div class="reveal">
+    <div class="section-label">02 — Technical Arsenal</div>
+    <h2 class="section-title">What I work with</h2>
+    <p class="section-desc">
+      Depth across systems administration, CI/CD automation, security operations,
+      and AI agent development — all battle-tested in production.
+    </p>
+  </div>
+
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <div class="skill-group-title">Systems & Administration</div>
+      <p>
+        <span class="hl">RHEL / CentOS / AlmaLinux</span> — kernel tuning, LVM, systemd service management,
+        partition management, SELinux enforcement, firewalld, cron scheduling,
+        kernel upgrades, package management with DNF/YUM.
+      </p>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">CI/CD & Automation</div>
+      <p>
+        <span class="hl">Jenkins</span> master/agent pipelines, <span class="hl">Bash scripting</span> for automation,
+        <span class="hl">Ansible</span> playbooks, <span class="hl">Telegram Bot API</span> for alerting,
+        <span class="hl">Git/GitLab</span> workflow, <span class="hl">Cron</span> scheduling,
+        <span class="hl">Docker</span> containerisation.
+      </p>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Data Engineering</div>
+      <p>
+        <span class="hl">Apache NiFi 2.x</span> multi-node cluster on Azure Ubuntu with <span class="hl">NiFi Registry</span>,
+        HTTPS/SSL reverse proxy, <span class="hl">Jython ExecuteScript</span> processors,
+        S3 data ingest flows, full TLS security.
+      </p>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Security & SOC</div>
+      <p>
+        <span class="hl">Wazuh SIEM</span> + <span class="hl">OpenVAS/GVM</span> self-hosted SOC stack,
+        <span class="hl">ModSecurity</span> OWASP rules, <span class="hl">fail2ban</span> DoS mitigation,
+        <span class="hl">iptables</span>, SSL/TLS, <span class="hl">ClamAV</span>,
+        file integrity monitoring, PCI-DSS compliance.
+      </p>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">AI & Agent Development</div>
+      <p>
+        <span class="hl">CrewAI</span> multi-agent orchestration, <span class="hl">LangChain</span> RAG,
+        <span class="hl">DSPy</span>, <span class="hl">TradingView MCP</span>, <span class="hl">Pine Script v5</span>,
+        SMC/ICT <span class="hl">Fair Value Gap</span> trading methodology,
+        <span class="hl">ONNX</span> vector embeddings, <span class="hl">Hugging Face</span>.
+      </p>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Monitoring & Web</div>
+      <p>
+        <span class="hl">Zabbix</span> custom templates for NiFi JVM metrics,
+        <span class="hl">Apache httpd</span> (VirtualHost, SSL CipherSuite, htpasswd),
+        <span class="hl">Nginx</span>, <span class="hl">HAProxy</span>,
+        log analysis, Prometheus-ready exports, <span class="hl">Let's Encrypt</span>.
+      </p>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Cloud & Storage</div>
+      <p>
+        <span class="hl">AWS S3 CLI</span> backup rotation (30-day retention), IAM security,
+        <span class="hl">Azure Ubuntu</span> nodes, <span class="hl">NFS</span>, <span class="hl">SAMBA</span>,
+        <span class="hl">MariaDB/MySQL</span>, Redis, automated offsite disaster recovery.
+      </p>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Trading Systems</div>
+      <p>
+        <span class="hl">XAUUSD</span> algorithmic trading with EMA bias + FVG entries,
+        <span class="hl">cTrader Python API</span>, <span class="hl">OANDA API</span>,
+        React dashboard, <span class="hl">Telegram alerts</span>,
+        risk management, backtesting with <span class="hl">yfinance</span>.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- ═══ ABOUT / SKILLS ═══ -->
-<section class="section about-section" id="about">
-  <div class="container">
-    <div class="section-header" data-reveal="up">
-      <span class="section-tag">01</span>
-      <h2 class="section-title">Skills & Stack</h2>
-      <p class="section-sub">Production-grade tools I've been running in the wild — not just tutorials.</p>
-    </div>
-    <div class="skills-grid">
+<div class="section-divider"></div>
 
-      <div class="skill-card" data-reveal="up" data-delay="0">
-        <div class="skill-icon"><i class="fas fa-server"></i></div>
-        <h3>Linux Administration</h3>
-        <p>RHEL/CentOS from bare metal to cloud. Kernel tuning, LVM, systemd, firewalld, SELinux hardening, LDAP, Samba/NFS, SSH hardening.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">RHEL 7–9</span><span class="skill-tag">LVM</span><span class="skill-tag">systemd</span><span class="skill-tag">firewalld</span><span class="skill-tag">LDAP</span>
-        </div>
-      </div>
-
-      <div class="skill-card" data-reveal="up" data-delay="80">
-        <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
-        <h3>CI/CD & Automation</h3>
-        <p>Jenkins master/agent setups, Docker pipelines, GitLab CI, Bash automation scripts, Cron watchers, Telegram alert bots.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">Jenkins</span><span class="skill-tag">Docker</span><span class="skill-tag">Bash</span><span class="skill-tag">GitLab</span><span class="skill-tag">Cron</span>
-        </div>
-      </div>
-
-      <div class="skill-card" data-reveal="up" data-delay="160">
-        <div class="skill-icon"><i class="fas fa-diagram-project"></i></div>
-        <h3>Data Engineering</h3>
-        <p>Multi-node Apache NiFi clusters with NiFi Registry HTTPS, Jython ExecuteScript processors, S3 ingest pipelines, HTTPS/TLS secured flows.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">Apache NiFi</span><span class="skill-tag">NiFi Registry</span><span class="skill-tag">Jython</span><span class="skill-tag">AWS S3</span>
-        </div>
-      </div>
-
-      <div class="skill-card" data-reveal="up" data-delay="240">
-        <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
-        <h3>Security & SOC</h3>
-        <p>Self-hosted vulnerability scanning with OpenVAS/GVM, Wazuh SIEM, ModSecurity WAF, fail2ban DoS mitigation, ClamAV, SSL/TLS.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">OpenVAS</span><span class="skill-tag">Wazuh</span><span class="skill-tag">ModSecurity</span><span class="skill-tag">fail2ban</span>
-        </div>
-      </div>
-
-      <div class="skill-card" data-reveal="up" data-delay="320">
-        <div class="skill-icon"><i class="fas fa-robot"></i></div>
-        <h3>AI & Agent Development</h3>
-        <p>Building autonomous AI pipelines with CrewAI multi-agent orchestration, LangChain RAG, ScrapeGraphAI, DSPy optimization, Pine Script v5.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">CrewAI</span><span class="skill-tag">LangChain</span><span class="skill-tag">DSPy</span><span class="skill-tag">ScrapeGraphAI</span><span class="skill-tag">Pine Script</span>
-        </div>
-      </div>
-
-      <div class="skill-card" data-reveal="up" data-delay="400">
-        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-        <h3>Algo Trading Systems</h3>
-        <p>XAUUSD automated trading with SMC/ICT methodology — Fair Value Gap entries, EMA bias, order blocks. cTrader Python API, React dashboards.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">XAUUSD</span><span class="skill-tag">SMC/ICT</span><span class="skill-tag">cTrader</span><span class="skill-tag">TradingView</span><span class="skill-tag">React</span>
-        </div>
-      </div>
-
-      <div class="skill-card" data-reveal="up" data-delay="480">
-        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-        <h3>Cloud & Infrastructure</h3>
-        <p>Azure Ubuntu deployments, AWS S3 backup rotation scripts, Apache httpd with SSL cipher tuning, reverse proxy configs, Zabbix monitoring.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">Azure</span><span class="skill-tag">AWS S3</span><span class="skill-tag">Apache</span><span class="skill-tag">Zabbix</span><span class="skill-tag">HAProxy</span>
-        </div>
-      </div>
-
-      <div class="skill-card" data-reveal="up" data-delay="560">
-        <div class="skill-icon"><i class="fas fa-database"></i></div>
-        <h3>Monitoring & Observability</h3>
-        <p>Zabbix agent deployment, Grafana-ready metrics, log aggregation, Apache NiFi monitoring, DoS attack pattern detection with fail2ban.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">Zabbix</span><span class="skill-tag">Logs</span><span class="skill-tag">Metrics</span><span class="skill-tag">Alerts</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══ PROJECTS ═══ -->
-<section class="section projects-section" id="projects">
-  <div class="container">
-    <div class="section-header" data-reveal="up">
-      <span class="section-tag">02</span>
-      <h2 class="section-title">Original Projects</h2>
-      <p class="section-sub">End-to-end builds — from research to production. All code written from scratch.</p>
-    </div>
-
-    <!-- Filter Tabs -->
-    <div class="projects-tabs" data-reveal="up">
-      <button class="tab-btn active" onclick="filterProjects('all')">All</button>
-      <button class="tab-btn" onclick="filterProjects('ai')">AI & Agents</button>
-      <button class="tab-btn" onclick="filterProjects('trading')">Trading Bots</button>
-      <button class="tab-btn" onclick="filterProjects('devops')">DevOps</button>
-      <button class="tab-btn" onclick="filterProjects('security')">Security</button>
-    </div>
-
-    <div class="projects-showcase" id="projectsShowcase">
-
-      <!-- FEATURED PROJECT -->
-      <div class="proj-featured tab-item" data-category="ai" data-reveal="up" data-delay="0">
-        <div class="pc-icon-wrap"><i class="fas fa-brain"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Featured · Live Deployed</div>
-          <h3 class="pc-title">jobmind-agent</h3>
-          <p class="pc-desc">
-            Multi-agent CrewAI pipeline for automated job applications. Agents coordinate: resume tailoring per job posting, cover letter generation, interview prep Q&amp;A, and job portal scanning. Full Streamlit UI — running live.
-          </p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">CrewAI</span>
-            <span class="pc-tech-tag">Python</span>
-            <span class="pc-tech-tag">Streamlit</span>
-            <span class="pc-tech-tag">ScrapeGraphAI</span>
-            <span class="pc-tech-tag">Playwright</span>
-            <span class="pc-tech-tag">Moonshot AI</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status pub"><i class="fas fa-globe"></i> Public</span>
-          <a href="https://github.com/achupradeep3050/jobmind-agent" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <!-- AI & AGENTS -->
-      <div class="proj-card tab-item" data-category="ai" data-reveal="up" data-delay="100">
-        <div class="pc-icon-wrap"><i class="fas fa-head-side-brain"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">AI Memory · Vector Search</div>
-          <h3 class="pc-title">my-brain</h3>
-          <p class="pc-desc">Personal AI knowledge brain with ONNX vector embeddings + semantic search. Long-term memory layer for autonomous agents. Built for ruflo swarm context injection.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Python</span><span class="pc-tech-tag">ONNX</span><span class="pc-tech-tag">AgentDB</span>
-            <span class="pc-tech-tag">HNSW</span><span class="pc-tech-tag">Semantic Search</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050/my-brain" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <div class="proj-card tab-item" data-category="ai" data-reveal="up" data-delay="180">
-        <div class="pc-icon-wrap"><i class="fas fa-microchip"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Web Scraping · LLM Pipeline</div>
-          <h3 class="pc-title">scrapegraph-pipeline</h3>
-          <p class="pc-desc">ScrapeGraphAI v2 pipeline with Blackbox AI (moonshot-k2.6) model. Python 3.12 venv. Scrapes complex JS-rendered sites, outputs structured JSON. Handles LinkedIn and dynamic content.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">ScrapeGraphAI</span><span class="pc-tech-tag">Blackbox AI</span>
-            <span class="pc-tech-tag">Python 3.12</span><span class="pc-tech-tag">JSON</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status pub"><i class="fas fa-globe"></i> Public</span>
-          <a href="https://github.com/achupradeep3050" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <!-- TRADING BOTS -->
-      <div class="proj-card tab-item" data-category="trading" data-reveal="up" data-delay="0">
-        <div class="pc-icon-wrap"><i class="fas fa-chart-line"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Gold Trading · SMC/ICT · Multi-Broker</div>
-          <h3 class="pc-title">xauusd-fvg-algo</h3>
-          <p class="pc-desc">XAUUSD automated trading system. EMA bias filter + Fair Value Gap (ICT) entries. OANDA API + cTrader Python. React dashboard + Telegram real-time alerts. Risk-managed position sizing.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Python</span><span class="pc-tech-tag">FVG/ICT</span>
-            <span class="pc-tech-tag">OANDA API</span><span class="pc-tech-tag">React</span>
-            <span class="pc-tech-tag">Telegram Bot</span><span class="pc-tech-tag">cTrader</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050/xauusd-fvg-algo" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <div class="proj-card tab-item" data-category="trading" data-reveal="up" data-delay="80">
-        <div class="pc-icon-wrap"><i class="fas fa-arrows-spin"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Forex Scalping · 24/7 Bot</div>
-          <h3 class="pc-title">sma_cross_scalp_bot</h3>
-          <p class="pc-desc">24/7 forex/CFD scalping bot. SMA 8/21/50 crossover on M1 timeframe. ATR consolidation filter eliminates noise. React dashboard + Telegram notifications. Live on demo.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Python</span><span class="pc-tech-tag">Forex</span>
-            <span class="pc-tech-tag">SMA Crossover</span><span class="pc-tech-tag">ATR</span>
-            <span class="pc-tech-tag">React</span><span class="pc-tech-tag">Telegram</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050/sma_cross_scalp_bot" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <div class="proj-card tab-item" data-category="trading" data-reveal="up" data-delay="160">
-        <div class="pc-icon-wrap"><i class="fas fa-book-open"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Market Analytics · Order Book</div>
-          <h3 class="pc-title">OBStat</h3>
-          <p class="pc-desc">Order book analytics platform for algo trading research. Depth visualization, trade flow analysis, bid-ask spread heatmaps. Market microstructure study tool for XAUUSD and FX pairs.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Python</span><span class="pc-tech-tag">Market Data</span>
-            <span class="pc-tech-tag">Analytics</span><span class="pc-tech-tag">XAUUSD</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050/OBStat" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <!-- DEVOPS -->
-      <div class="proj-card tab-item" data-category="devops" data-reveal="up" data-delay="0">
-        <div class="pc-icon-wrap"><i class="fas fa-diagram-project"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Data Engineering · Multi-Node Cluster</div>
-          <h3 class="pc-title">nifi-cluster-prod</h3>
-          <p class="pc-desc">Production Apache NiFi 2.x cluster on Azure Ubuntu — multi-node TLS/SSL secured with NiFi Registry. Jython ExecuteScript processors, S3 ingest flows, custom processors. Full HTTPS setup.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Apache NiFi</span><span class="pc-tech-tag">NiFi Registry</span>
-            <span class="pc-tech-tag">Azure Ubuntu</span><span class="pc-tech-tag">TLS/SSL</span>
-            <span class="pc-tech-tag">Jython</span><span class="pc-tech-tag">AWS S3</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <div class="proj-card tab-item" data-category="devops" data-reveal="up" data-delay="80">
-        <div class="pc-icon-wrap"><i class="fas fa-database"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Database · Backup Automation</div>
-          <h3 class="pc-title">hoai-s3-backup</h3>
-          <p class="pc-desc">Automated HOAI database + file backup to AWS S3 with 30-day retention. Daily cron-driven rotation, IAM role security, encrypted transfers. Replaced manual offsite backup process.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Bash</span><span class="pc-tech-tag">AWS S3 CLI</span>
-            <span class="pc-tech-tag">Cron</span><span class="pc-tech-tag">MariaDB</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status pub"><i class="fas fa-globe"></i> Public</span>
-          <a href="https://github.com/achupradeep3050" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <div class="proj-card tab-item" data-category="devops" data-reveal="up" data-delay="160">
-        <div class="pc-icon-wrap"><i class="fas fa-server"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Monitoring · Infrastructure</div>
-          <h3 class="pc-title">linux-hardening-playbook</h3>
-          <p class="pc-desc">Ansible playbook + Bash scripts for Linux server hardening. Firewalld, fail2ban DoS mitigation, ModSecurity WAF, SSL cipher tuning, Logwatch, RPM permissions. 15+ scripts covering AlmaLinux/RHEL 8/9.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Ansible</span><span class="pc-tech-tag">Bash</span>
-            <span class="pc-tech-tag">ModSecurity</span><span class="pc-tech-tag">fail2ban</span>
-            <span class="pc-tech-tag">firewalld</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <!-- SECURITY -->
-      <div class="proj-card tab-item" data-category="security" data-reveal="up" data-delay="0">
-        <div class="pc-icon-wrap"><i class="fas fa-shield-virus"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">Self-Hosted SOC · Vulnerability Scanning</div>
-          <h3 class="pc-title">VA-Opensource-Audit</h3>
-          <p class="pc-desc">Agentless vulnerability auditing dashboard. ClamAV + OpenVAS/GVM scanners across Linux servers. Self-hosted SOC stack — no Splunk dependency. Generates compliance reports for PCI-DSS checks.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">OpenVAS/GVM</span><span class="pc-tech-tag">ClamAV</span>
-            <span class="pc-tech-tag">Python</span><span class="pc-tech-tag">SOC</span>
-            <span class="pc-tech-tag">Compliance</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050/VA-Opensource-Audit" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-      <div class="proj-card tab-item" data-category="security" data-reveal="up" data-delay="80">
-        <div class="pc-icon-wrap"><i class="fas fa-eye"></i></div>
-        <div class="pc-body">
-          <div class="pc-eyebrow">SIEM · Threat Detection</div>
-          <h3 class="pc-title">wazuh-siems-stack</h3>
-          <p class="pc-desc">Wazuh SIEM deployment across on-prem Linux servers. Custom decoders for Apache/NiFi logs, threat detection rules, alerting to Telegram. File integrity monitoring + rootkit detection configured.</p>
-          <div class="pc-tech-row">
-            <span class="pc-tech-tag">Wazuh</span><span class="pc-tech-tag">SIEM</span>
-            <span class="pc-tech-tag">Log Analysis</span><span class="pc-tech-tag">Threat Detection</span>
-          </div>
-        </div>
-        <div class="pc-right">
-          <span class="pc-status priv"><i class="fas fa-lock"></i> Private</span>
-          <a href="https://github.com/achupradeep3050" target="_blank" class="pc-link-btn">
-            <i class="fab fa-github"></i> View
-          </a>
-        </div>
-      </div>
-
-    </div><!-- /projects-showcase -->
-  </div><!-- /container -->
-</section>
-
-<!-- ═══ EXPERIENCE ═══ -->
+<!-- EXPERIENCE -->
 <section class="section experience-section" id="experience">
-  <div class="container">
-    <div class="section-header" data-reveal="up">
-      <span class="section-tag">03</span>
-      <h2 class="section-title">Experience</h2>
-      <p class="section-sub">Real infrastructure. Production systems. Battle-tested stacks.</p>
-    </div>
-    <div class="timeline">
+  <div class="reveal">
+    <div class="section-label">03 — Work History</div>
+    <h2 class="section-title">Where I've built things</h2>
+    <p class="section-desc">
+      Real production environments. Tight deadlines. Problems solved.
+    </p>
+  </div>
 
-      <div class="tl-item" data-reveal="left" data-delay="0">
-        <div class="tl-company">PanApps Inc · Freelance</div>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-left">
+        <div class="tl-company">PanApps Inc</div>
+        <div class="tl-date">Jan 2024 — Present</div>
+        <span class="tl-type">Freelance</span>
+      </div>
+      <div class="tl-right">
         <div class="tl-role">DevOps Engineer & AI Agent Developer</div>
-        <div class="tl-date">January 2024 — Present · Aluva, Kerala</div>
         <ul class="tl-bullets">
-          <li>Built multi-node Apache NiFi 2.x cluster on Azure Ubuntu with NiFi Registry HTTPS — 3-node TLS-secured data pipeline processing live event streams</li>
-          <li>Jenkins master/agent CI/CD setup — automated Docker builds, Bash test runners, nightly deploy pipelines with Telegram status notifications</li>
-          <li>Wazuh SIEM + OpenVAS/GVM self-hosted SOC stack — file integrity monitoring, rootkit detection, PCI-DSS compliance reporting</li>
-          <li>AWS S3 backup rotation via Bash + cron — 30-day retention, IAM role security, automated offsite disaster recovery for HOAI</li>
-          <li>CrewAI multi-agent pipeline (JobMind) — 4 specialized agents, Streamlit UI, deployed live via ngrok tunnel</li>
-          <li>Zabbix monitoring templates for NiFi JVM heap, thread pools, queue depth — Telegram threshold alerts</li>
-          <li>Apache httpd hardened with ModSecurity OWASP rules, fail2ban DoS mitigation, SSL cipher suite tuning</li>
+          <li>Multi-node Apache NiFi 2.x cluster on Azure Ubuntu with NiFi Registry HTTPS — 3-node TLS-secured data pipeline for live event stream processing</li>
+          <li>Jenkins master/agent CI/CD pipeline — automated Docker builds, Bash test runners, nightly deploy jobs, Telegram status notifications</li>
+          <li>Wazuh SIEM + OpenVAS/GVM self-hosted SOC stack — file integrity monitoring, rootkit detection, PCI-DSS compliance across Linux production servers</li>
+          <li>CrewAI multi-agent job pipeline (JobMind) — 4 specialised agents, Streamlit UI, live ngrok deployment handling real job applications</li>
+          <li>Zabbix monitoring templates for NiFi JVM heap, thread pools, queue depth — Telegram threshold alerting for production environments</li>
+          <li>Apache httpd hardened with ModSecurity OWASP rules, fail2ban DoS jail configs, SSL cipher suite tuning for TLS 1.2/1.3</li>
         </ul>
       </div>
+    </div>
 
-      <div class="tl-item" data-reveal="left" data-delay="100">
-        <div class="tl-company">Leadership Domestic Workers SC</div>
+    <div class="tl-item reveal">
+      <div class="tl-left">
+        <div class="tl-company">Leadership DWSC</div>
+        <div class="tl-date">2022 — Dec 2023</div>
+        <span class="tl-type">Full-time</span>
+      </div>
+      <div class="tl-right">
         <div class="tl-role">System Administrator</div>
-        <div class="tl-date">2022 — December 2023 · Kerala</div>
         <ul class="tl-bullets">
-          <li>Redmine 5.0 → 6.0 migration on RHEL 8 — Jython automation for data migration, plugin compatibility matrix, <2hr maintenance window</li>
-          <li>OpenVPN split-tunnel VPN — secure remote access for 40+ field staff, certificate-based auth with CRL revocation</li>
+          <li>Redmine 5.0 → 6.0 on RHEL 8 — Jython automation for data migration, plugin compatibility matrix, sub-2hr maintenance window</li>
+          <li>OpenVPN split-tunnel VPN — certificate-based authentication, CRL revocation, secure remote access for 40+ field staff</li>
           <li>Drupal CMS on Apache/PHP-FPM — Redis caching, CDN integration, automated S3 backup via cron</li>
-          <li>Samba PDC + rsync over SSH — daily incremental backups across 6 Linux servers, near-zero data loss</li>
+          <li>Samba PDC + rsync over SSH — daily incremental backups across 6 Linux servers, near-zero data loss achieved</li>
           <li>Let's Encrypt SSL renewal, kernel patching, weekly security update cycle for all servers</li>
         </ul>
       </div>
+    </div>
 
-      <div class="tl-item" data-reveal="left" data-delay="200">
+    <div class="tl-item reveal">
+      <div class="tl-left">
         <div class="tl-company">IPSR Solutions Ltd</div>
+        <div class="tl-date">2020 — 2022</div>
+        <span class="tl-type">Full-time</span>
+      </div>
+      <div class="tl-right">
         <div class="tl-role">Linux Systems Engineer</div>
-        <div class="tl-date">2020 — 2022 · Kerala</div>
         <ul class="tl-bullets">
-          <li>In-place RHEL 8.1 → 8.9 / 9.0 production upgrades — pre-validation runbooks, rollback procedures, 4hr downtime SLA met</li>
-          <li>ModSecurity Web Application Firewall — custom CRS rules for PCI-DSS compliance on public-facing apps</li>
-          <li>fail2ban DoS mitigation — custom jail configs dropping HTTP flood at firewall level, 99.7% uptime</li>
+          <li>In-place RHEL 8.1 → 8.9 / 9.0 production upgrades — pre-validation runbooks, rollback procedures, 4hr maximum downtime SLA met</li>
+          <li>ModSecurity Web Application Firewall — custom CRS rules for PCI-DSS compliance on public-facing web applications</li>
+          <li>fail2ban custom jail configurations — HTTP flood detection at firewall level, 99.7% uptime maintained</li>
           <li>LVM on nvme — online volume extension, snapshot-based MySQL backup, eliminated planned downtime</li>
-          <li>PHP 7.4 → 8.1 migration across 12 legacy web apps — composer resolution, deprecated function audit</li>
-          <li>Apache reverse proxy + HAProxy — load balancing, SSL termination, health checks for 3-node Tomcat cluster</li>
+          <li>PHP 7.4 → 8.1 migration across 12 legacy web apps — composer dependency resolution, deprecated function audit</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ══��� CERTIFICATIONS ═══ -->
-<section class="section contact-section" id="certifications">
-  <div class="container">
-    <div class="section-header" data-reveal="up">
-      <span class="section-tag">04</span>
-      <h2 class="section-title">Certifications</h2>
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section class="section projects-section" id="projects">
+  <div class="reveal">
+    <div class="section-label">04 — GitHub Projects</div>
+    <h2 class="section-title">What I've shipped</h2>
+    <p class="section-desc">
+      Public repositories on GitHub — each one solves a real problem.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">🤖</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">jobmind-agent</div>
+          <div class="project-cat">AI Agent Pipeline</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        CrewAI multi-agent job application pipeline — automated resume tailoring, cover letter generation,
+        interview prep, and job portal scanning across Naukri, LinkedIn, and Indeed.
+        4 specialised agents working in sequence.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">CrewAI</span>
+        <span class="tech-tag">Streamlit</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Telegram API</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/jobmind-agent" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
     </div>
-    <div class="skills-grid">
-      <div class="skill-card" data-reveal="up" data-delay="0" style="text-align:center">
-        <div class="skill-icon" style="margin:0 auto 1rem"><i class="fab fa-red-hat"></i></div>
-        <h3>RHCSA</h3>
-        <p>Red Hat Certified System Administrator · Cert ID: 170-179-113</p>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">📊</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">xauusd-fvg-algo</div>
+          <div class="project-cat">Algorithmic Trading</div>
+        </div>
       </div>
-      <div class="skill-card" data-reveal="up" data-delay="100" style="text-align:center">
-        <div class="skill-icon" style="margin:0 auto 1rem"><i class="fab fa-red-hat"></i></div>
-        <h3>RHCE</h3>
-        <p>Red Hat Certified Engineer · Cert ID: 170-179-113</p>
+      <p class="project-desc">
+        XAUUSD automated gold trading system — EMA 20/50 bias combined with ICT Fair Value Gap (FVG) entries.
+        Multi-broker support via OANDA + TOOBIT. React dashboard with TradingView-style charts and Telegram alerts.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Pine Script v5</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">OANDA API</span>
+        <span class="tech-tag">SMC/ICT</span>
       </div>
-      <div class="skill-card" data-reveal="up" data-delay="200" style="text-align:center">
-        <div class="skill-icon" style="margin:0 auto 1rem"><i class="fas fa-shield-halved"></i></div>
-        <h3>Ethical Hacking</h3>
-        <p>Course Completion Certificate · IIIT Kerala</p>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/xauusd-fvg-algo" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">📉</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">sma_cross_scalp_bot</div>
+          <div class="project-cat">Forex Scalping</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        24/7 automated forex/CFD scalping bot using SMA 8/21/50 crossover on M1 timeframe.
+        ATR consolidation filter prevents false entries. React dashboard + Telegram notifications.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">ATR Indicator</span>
+        <span class="tech-tag">Telegram</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/sma_cross_scalp_bot" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">🛡️</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">VA-Opensource-Audit</div>
+          <div class="project-cat">SOC Automation</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Self-hosted SOC dashboard for agentless vulnerability auditing across Linux servers.
+        Integrates ClamAV antivirus management and OpenVAS/GVM scanning with automated compliance reports.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">OpenVAS/GVM</span>
+        <span class="tech-tag">ClamAV</span>
+        <span class="tech-tag">Docker</span>
+        <span class="tech-tag">Python</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/VA-Opensource-Audit" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">🌊</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">ruflo</div>
+          <div class="project-cat">Agent Orchestration</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms,
+        coordinate autonomous workflows, and build conversational AI systems. Enterprise-grade
+        architecture with distributed swarm intelligence.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Claude Code</span>
+        <span class="tech-tag">Multi-Agent</span>
+        <span class="tech-tag">RAG</span>
+        <span class="tech-tag">HNSW</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/ruflo" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">🔍</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">tradingview-mcp</div>
+          <div class="project-cat">Trading Infrastructure</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Real-time crypto and stock screening with advanced technical indicators, Bollinger Bands intelligence,
+        candlestick patterns. Multi-exchange support (Binance, KuCoin, Bybit). Native Claude Desktop integration.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">TradingView</span>
+        <span class="tech-tag">MCP</span>
+        <span class="tech-tag">Binance API</span>
+        <span class="tech-tag">Claude</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/tradingview-mcp" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">📚</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">open-design</div>
+          <div class="project-cat">Design Systems</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Local-first, open-source alternative to Anthropic's Claude Design. 19 Skills · 71 brand-grade design systems.
+        Generate web/desktop/mobile prototypes, slides, images, videos. Runs on Claude Code, Codex, Cursor, Gemini.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Claude Code</span>
+        <span class="tech-tag">Design Systems</span>
+        <span class="tech-tag">HTML/CSS</span>
+        <span class="tech-tag">Prototyping</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/open-design" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">🦌</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">deer-flow</div>
+          <div class="project-cat">SuperAgent Harness</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Open-source long-horizon SuperAgent harness that researches, codes, and creates.
+        Sandboxed execution, memory systems, skill management, subagents and message gateway
+        for tasks spanning minutes to hours.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Sandbox</span>
+        <span class="tech-tag">Subagents</span>
+        <span class="tech-tag">Memory</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/deer-flow" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+    <div class="project-item reveal">
+      <div class="project-top">
+        <div class="project-icon">📈</div>
+        <div class="project-info" style="flex:1">
+          <div class="project-name">OBStat</div>
+          <div class="project-cat">Trading Analytics</div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Order book analytics platform — depth visualisation, trade flow analysis,
+        and bid-ask spread heatmaps for XAUUSD market microstructure research.
+        Helps identify liquidity zones and order block imbalances.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Order Book</span>
+        <span class="tech-tag">XAUUSD</span>
+        <span class="tech-tag">Analytics</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/achupradeep3050/OBStat" target="_blank" class="project-link github">
+          ↑ Source
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- OSS CONTRIBUTIONS -->
+<section class="section oss-section" id="oss">
+  <div class="reveal">
+    <div class="section-label">05 — Open Source</div>
+    <h2 class="section-title">Contributing to the community</h2>
+    <p class="section-desc">
+      Major open source projects I'm involved with — substantial communities, real impact.
+    </p>
+  </div>
+
+  <div class="oss-grid">
+    <div class="oss-item reveal">
+      <div class="oss-name">InsForge</div>
+      <div class="oss-stars">⚡ The all-in-one agentic coding backend platform</div>
+      <p class="oss-desc">
+        Gives your coding agent database, auth, storage, compute, hosting, and AI gateway to ship
+        full-stack apps end-to-end. Active development platform.
+      </p>
+      <div class="project-links" style="margin-top:12px">
+        <a href="https://github.com/achupradeep3050/InsForge" target="_blank" class="project-link github">↑ Source</a>
+      </div>
+    </div>
+    <div class="oss-item reveal">
+      <div class="oss-name">awesome-llm-apps</div>
+      <div class="oss-stars">📚 100+ AI Agent & RAG apps you can actually run</div>
+      <p class="oss-desc">
+        Curated collection of LLM-powered applications with full implementation guides.
+        Clone, customise, and ship — covering RAG, agents, automation, and more.
+      </p>
+      <div class="project-links" style="margin-top:12px">
+        <a href="https://github.com/achupradeep3050/awesome-llm-apps" target="_blank" class="project-link github">↑ Source</a>
+      </div>
+    </div>
+    <div class="oss-item reveal">
+      <div class="oss-name">ai-engineering-hub</div>
+      <div class="oss-stars">🧠 In-depth tutorials on LLMs, RAGs, and AI agents</div>
+      <p class="oss-desc">
+        Practical, production-focused tutorials on building real-world AI agent applications.
+        Covers LangChain, LlamaIndex, fine-tuning, deployment, and observability.
+      </p>
+      <div class="project-links" style="margin-top:12px">
+        <a href="https://github.com/achupradeep3050/ai-engineering-hub" target="_blank" class="project-link github">↑ Source</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ CONTACT ═══ -->
-<section class="section contact-section" id="contact">
-  <div class="container">
-    <div class="section-header" data-reveal="up">
-      <span class="section-tag">05</span>
-      <h2 class="section-title">Let's Build Together</h2>
-      <p class="section-sub">Open to DevOps, AI automation, and trading system projects. Direct line always open.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info-card" data-reveal="left">
-        <div class="cf-title">Reach me directly</div>
-        <a href="mailto:achupradeep3050@gmail.com" class="contact-link-item">
-          <div class="cli-icon"><i class="fas fa-envelope"></i></div>
-          <div>
-            <div class="cli-label">Email</div>
-            <div class="cli-value">achupradeep3050@gmail.com</div>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/achu-pradeep-702667404" target="_blank" class="contact-link-item">
-          <div class="cli-icon"><i class="fab fa-linkedin"></i></div>
-          <div>
-            <div class="cli-label">LinkedIn</div>
-            <div class="cli-value">/achu-pradeep-702667404</div>
-          </div>
-        </a>
-        <a href="https://github.com/achupradeep3050" target="_blank" class="contact-link-item">
-          <div class="cli-icon"><i class="fab fa-github"></i></div>
-          <div>
-            <div class="cli-label">GitHub</div>
-            <div class="cli-value">/achupradeep3050</div>
-          </div>
-        </a>
-        <a href="https://achupradeep3050.github.io/achupradeep3050/" target="_blank" class="contact-link-item">
-          <div class="cli-icon"><i class="fas fa-globe"></i></div>
-          <div>
-            <div class="cli-label">Portfolio</div>
-            <div class="cli-value">achupradeep.dev</div>
-          </div>
-        </a>
-      </div>
-      <div class="contact-form-card" data-reveal="right">
-        <div class="cf-title">Send a message</div>
-        <form onsubmit="handleFormSubmit(event)">
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" placeholder="Your name" required>
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="you@example.com" required>
-          </div>
-          <div class="form-group">
-            <label>Project Type</label>
-            <input type="text" placeholder="DevOps / AI Agent / Trading Bot / Other">
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea rows="4" placeholder="Tell me about your project..."></textarea>
-          </div>
-          <button type="submit" class="form-submit">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ FOOTER ═══ -->
+<!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-logo">Achu<span>.</span>dev</div>
-  <div class="footer-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="https://github.com/achupradeep3050" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/achu-pradeep-702667404" target="_blank">LinkedIn</a>
-  </div>
-  <div class="footer-copy">
-    &copy; 2026 Achu Pradeep · Linux DevOps & AI Agent Engineer · Kerala, India
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/achupradeep3050" target="_blank">↑ GitHub</a>
+      <a href="https://linkedin.com/in/achu-pradeep-702667404" target="_blank">💼 LinkedIn</a>
+      <a href="mailto:achupradeep3050@gmail.com">✉ Email</a>
+      <a href="https://achupradeep3050.github.io/achupradeep3050" target="_blank">🌐 Portfolio</a>
+    </div>
+    <p class="footer-copy">
+      Built by <span>Achu Pradeep</span> · Linux DevOps Engineer & AI Agent Developer ·
+      RHCSA + RHCE Certified
+    </p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+// ── Scroll reveal ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const delay = e.target.dataset.delay || 0;
+      setTimeout(() => e.target.classList.add('visible'), delay);
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ── Nav hide/show on scroll ──
+let lastY = 0;
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('nav');
+  const y = window.scrollY;
+  if (y > 100) {
+    nav.classList.toggle('hidden', y > lastY && y > 200);
+  } else {
+    nav.classList.remove('hidden');
+  }
+  lastY = y;
+}, { passive: true });
+
+// ── Active nav link ──
+const sections = document.querySelectorAll('section[id], div[id]');
+const navLinks  = document.querySelectorAll('.nav-links a:not(.primary)');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+  });
+}, { passive: true });
+</script>
 </body>
 </html>
