@@ -19,21 +19,6 @@
 
 ---
 
-## 🏆 Certifications
-
-<p align="center">
-  <img src="https://img.shields.io/badge/RHCSA-Red_Hat_Certified_System_Administrator-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="RHCSA" />
-  <img src="https://img.shields.io/badge/RHCE-Red_Hat_Certified_Engineer-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="RHCE" />
-</p>
-
-<p align="center">
-  <strong>RHCSA</strong> · Red Hat Certified System Administrator &nbsp;|&nbsp;
-  <strong>RHCE</strong> · Red Hat Certified Engineer &nbsp;|&nbsp;
-  <em>Cert ID: 170-179-113</em>
-</p>
-
----
-
 ## 📊 GitHub Stats
 
 <p align="center">
