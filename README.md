@@ -21,13 +21,16 @@
 
 ## 🏆 Certifications
 
-| | |
-|:---:|:---:|
-| <img src="https://images.credly.com/images/066b4535-0ae4-4c87-bdbb-a70b32f4e270__rhcsa-technology-associate-badge.png" width="65" /> | <img src="https://images.credly.com/images/6eab0157-e827-42c9-8038-89a40da1c78d__rhcpe-technology-associate-badge.png" width="65" /> |
-| **RHCSA** | **RHCE** |
-| Red Hat Certified System Administrator | Red Hat Certified Engineer |
+<p align="center">
+  <img src="https://img.shields.io/badge/RHCSA-Red_Hat_Certified_System_Administrator-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="RHCSA" />
+  <img src="https://img.shields.io/badge/RHCE-Red_Hat_Certified_Engineer-EE0000?style=for-the-badge&logo=redhat&logoColor=white" alt="RHCE" />
+</p>
 
-*Cert ID: 170-179-113*
+<p align="center">
+  <strong>RHCSA</strong> · Red Hat Certified System Administrator &nbsp;|&nbsp;
+  <strong>RHCE</strong> · Red Hat Certified Engineer &nbsp;|&nbsp;
+  <em>Cert ID: 170-179-113</em>
+</p>
 
 ---
 
@@ -38,12 +41,13 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=achupradeep3050&show_icons=true&theme=midnight-purple&bg_color=0D1117&title_color=60A5FA&icon_color=34D399&text_color=E2E8F0&rank_icon=github&count_private=true" width="48%" alt="Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=achupradeep3050&layout=compact&theme=midnight-purple&bg_color=0D1117&title_color=60A5FA&text_color=E2E8F0&card_width=310" width="48%" alt="Top Languages" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=achupradeep3050&theme=midnight-purple&bg_color=0D1117&color=60A5FA&line=60A5FA&point=34D399&area=true" alt="Activity Graph" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=achupradeep3050&theme=midnight-purple&bg_color=0D1117&color=60A5FA&line=60A5FA&point=34D399&area=true" alt="Activity Graph" />
+  <!-- GitHub Stats Cards — fallbacks use standard blue theme -->
+  <img src="https://github-readme-stats.vercel.app/api?username=achupradeep3050&show_icons=true&theme=midnight-purple&bg_color=0D1117&title_color=60A5FA&icon_color=34D399&text_color=E2E8F0&rank_icon=github&count_private=true" width="48%" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=achupradeep3050&layout=compact&theme=midnight-purple&bg_color=0D1117&title_color=60A5FA&text_color=E2E8F0&card_width=310" width="48%" alt="Top Languages" />
 </p>
 
 ---
@@ -81,7 +85,7 @@ Created:    May 2026
 Stack:      CrewAI multi-agent framework · Streamlit UI · ScrapeGraphAI web scraping
             · Moonshot AI kimi-k2.6 inference · ngrok tunnel · PM2 managed
 Languages:  Python 95.5% · Shell 3.2% · JavaScript 1.2%
-Status:     LIVE — deployed via ngrok · autonomous agent pipeline
+Status:     LIVE — deployed via ngrok · fully autonomous agent pipeline
 ```
 
 **Pipeline Architecture:**
@@ -246,10 +250,12 @@ Ruby/Other    █░░░░░░░░░░░░░░░░░░░░░
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1B2A&height=28&section=footer&text=Built%20in%20Public%20by%20Achu%20Pradeep%20·%20 Kerala%2C%20India&fontColor=60A5FA&fontSize=11" alt="Footer" width="100%"/>
-</p>
-
-<p align="center">
   <img src="https://komarev.com/ghpvc/?username=achupradeep3050&style=midnight-purple&label=Profile+Views&color=60A5FA" alt="Views" />
   <img src="https://img.shields.io/github/followers/achupradeep3050?style=flat&logo=github&color=60A5FA" alt="Followers" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1B2A&height=28&section=footer&text=Built%20in%20Public%20by%20Achu%20Pradeep%20·%20Kerala%2C%20India&fontColor=60A5FA&fontSize=11" alt="Footer" width="100%"/>
 </p>
