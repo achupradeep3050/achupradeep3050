@@ -110,11 +110,11 @@
 
 <br>
 
-![GitHub Stats Dark](https://github-readme-stats-git-masterrstasta-原件.vercel.app/api?username=achupradeep3050&theme=midnight-purple&hide_border=true&border_radius=12&border_color=f5c542&cache_seconds=86400)
+![GitHub Stats Dark](https://github-readme-stats.vercel.app/api?username=achupradeep3050&theme=midnight-purple&hide_border=true&border_radius=12&border_color=f5c542&cache_seconds=86400&line_height=28&include_all_commits=true&rank_column=true)
 
-![Top Languages](https://github-readme-stats-git-masterrstasta-原件.vercel.app/api/top-langs/?username=achupradeep3050&theme=midnight-purple&hide_border=true&border_radius=12&layout=compact&border_color=f5c542&langs_count=8&cache_seconds=86400)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=achupradeep3050&theme=midnight-purple&hide_border=true&border_radius=12&layout=compact&border_color=f5c542&langs_count=8&cache_seconds=86400)
 
-![Streak](https://streak-stats.demofab.org?user=achupradeep3050&theme=midnight-purple&hide_border=true&border_color=f5c542&ring=f5c542&fire=f5c542&currStreakLabel=f5c542&sideNums=f5c542&sideLabels=f5c542&currStreakLabel=f5c542&nextStreakLabel=f5c542&cache=86400)
+![Streak](https://streak-stats.demofab.org?user=achupradeep3050&theme=midnight-purple&hide_border=true&border_color=f5c542&ring=f5c542&fire=f5c542&currStreakLabel=f5c542&sideNums=f5c542&sideLabels=f5c542&nextStreakLabel=f5c542)
 
 </p>
 
@@ -137,7 +137,7 @@
 [![Email](https://img.shields.io/badge/Email-achupradeep3050@gmail.com-f5c542?style=flat-square&logo=gmail)](mailto:achupradeep3050@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-achu--pradeep-702667404-f5c542?style=flat-square&logo=linkedin)](https://linkedin.com/in/achu-pradeep-702667404)
 [![GitHub](https://img.shields.io/badge/GitHub-achupradeep3050-f5c542?style=flat-square&logo=github)](https://github.com/achupradeep3050)
-[![Telegram](https://img.shields.io/badge/Telegram-Send_a_Message-f5c542?style=flat-square&logo=telegram)](https://t.me/+917055777055)
+[![Telegram](https://img.shields.io/badge/Telegram-@AchuPradeep-f5c542?style=flat-square&logo=telegram)](https://t.me/AchuPradeep)
 
 </p>
 
