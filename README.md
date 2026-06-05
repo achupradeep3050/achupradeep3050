@@ -1,246 +1,123 @@
-# 👋 Hey, I'm Achu Pradeep
+<!-- ╔══════════════════════════════════════════════════════════════╗ -->
+<!--                    Achu Pradeep · GitHub Profile                  -->
+<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-**Linux DevOps Engineer · AI Agent Developer · Algorithmic Trading Systems Builder**
+<a href="https://hedge.dpdns.org">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1F2937,100:F59E0B&height=200&section=header&text=Achu%20Pradeep&fontColor=F5C542&fontSize=52&fontAlignY=38&desc=Linux%20DevOps%20Engineer%20·%20AI%20Agent%20Developer%20·%20Algo-Trading%20Systems&descSize=18&descAlignY=60&descColor=E2E8F0" alt="Achu Pradeep" />
+</a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Linux-DevOps-brightgreen?style=flat&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/CrewAI-Agent-FF6B35?style=flat" />
-  <img src="https://img.shields.io/badge/Algos-XAUUSD-F59E0B?style=flat&logoColor=white" />
-  <img src="https://img.shields.io/badge/SOC-Security-FF2D2D?style=flat" />
+  <a href="https://readme-typing-svg.demolab.com">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=F5C542&center=true&vCenter=true&width=720&lines=I+automate+infrastructure+and+ship+AI+agents.;RHCSA+%2B+RHCE+%2B+CEH+certified.;CrewAI+pipelines+%C2%B7+SMC%2FFVG+trading+bots+%C2%B7+self-hosted+SOC.;From+Linux+systems+to+autonomous+agents." alt="typing" />
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/achu-pradeep-702667404"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:achupradeep3050@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
-  <a href="https://achupradeep3050.github.io/achupradeep3050"><img src="https://img.shields.io/badge/Portfolio-Live-brightgreen?style=flat&logo=googlechrome&logoColor=white" /></a>
-</p>
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=achupradeep3050&theme=midnight-purple&card_type=svg&height=60&width=520" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=achupradeep3050&theme=midnight-purple&bg_color=0D1117&color=60A5FA&line=60A5FA&point=34D399&area=true" alt="Activity Graph" />
-</p>
-
-<p align="center">
-  <!-- GitHub Stats Cards — fallbacks use standard blue theme -->
-  <img src="https://github-readme-stats.vercel.app/api?username=achupradeep3050&show_icons=true&theme=midnight-purple&bg_color=0D1117&title_color=60A5FA&icon_color=34D399&text_color=E2E8F0&rank_icon=github&count_private=true" width="48%" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=achupradeep3050&layout=compact&theme=midnight-purple&bg_color=0D1117&title_color=60A5FA&text_color=E2E8F0&card_width=310" width="48%" alt="Top Languages" />
+  <a href="https://hedge.dpdns.org"><img src="https://img.shields.io/badge/Portfolio-hedge.dpdns.org-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/achu-pradeep-702667404"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:achupradeep3050@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <img src="https://img.shields.io/badge/Aluva,%20Kerala%20·%20India-1F2937?style=for-the-badge&logo=googlemaps&logoColor=F59E0B" />
 </p>
 
 ---
 
-## 🛠️ Tech Stack
+### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="26"> About
 
-| Domain | Technologies |
-|--------|-------------|
-| **AI & Agents** | CrewAI · Moonshot AI (kimi-k2.6) · LangChain · DSPy · ScrapeGraphAI · Claude AI |
-| **Algo Trading** | SMC/ICT · FVG · EMA Crossover · RSI · Bollinger Bands · TMA · TradingView · cTrader |
-| **Backend** | Python · Django · Celery · Flask · REST APIs |
-| **Frontend** | React · HTML5 · CSS3 · Vanilla JS · Streamlit · Glassmorphism UI |
-| **Finance APIs** | OANDA · TOOBIT · CCXT · TradingView Alert Webhooks |
-| **Security / SOC** | OpenVAS/GVM · ClamAV · Wazuh SIEM · ModSecurity · CVE Scanning · JWT · TOTP MFA · RBAC |
-| **Containerisation** | Docker · Kubernetes (learning) |
-| **CI/CD** | Jenkins · GitOps · Blue-green Deployments |
-| **Monitoring** | Zabbix · Prometheus · Grafana · PagerDuty |
-| **IaC** | Terraform · Ansible · AWS CLI (S3, EC2, IAM) |
-| **Linux** | RHEL/CentOS · Ubuntu Server · LVM · systemd · SELinux |
-| **Mobile** | Kotlin (Android) |
+```python
+class AchuPradeep:
+    role        = "Linux DevOps Engineer & AI Agent Developer"
+    experience  = "2.5+ yrs IT/server administration → production AI & trading systems"
+    certs       = ["RHCSA (170-179-113)", "RHCE", "CEH"]
+    focus       = ["Infra automation", "Agentic AI", "Algorithmic trading", "Security ops"]
+    seeking     = ["Linux DevOps", "SRE", "AI Infrastructure", "Security Operations"]
+    motto       = "From Linux systems to autonomous agents — in production."
+```
+
+I started in Linux/server administration (RHCSA + RHCE) and now build **AI-agent pipelines** and
+**algorithmic-trading platforms** end to end — backend, dashboards, mobile, infra, and the agents
+that run them.
 
 ---
 
-## 🔥 Featured Projects
+### 🧰 Tech Stack
 
----
+**AI & Agents**
+<p>
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,fastapi,flask&theme=dark" height="40" />
+  <img src="https://img.shields.io/badge/CrewAI-FF6B35?style=flat-square" height="28" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain" height="28" />
+  <img src="https://img.shields.io/badge/LangGraph-2B6CB0?style=flat-square" height="28" />
+  <img src="https://img.shields.io/badge/DSPy-512BD4?style=flat-square" height="28" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" height="28" />
+</p>
 
-### 🤖 JobMind Agent — AI-Powered Autonomous Job Application Pipeline
-**`[Public]`** · `Python · CrewAI · Streamlit · ScrapeGraphAI · Moonshot AI · ngrok`
+**DevOps · Cloud · Security**
+<p>
+  <img src="https://skillicons.dev/icons?i=linux,redhat,docker,kubernetes,ansible,jenkins,terraform,bash,nginx,grafana,prometheus,aws&theme=dark" height="40" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Wazuh%20SIEM-3B82F6?style=flat-square" height="26" />
+  <img src="https://img.shields.io/badge/OpenVAS%2FGVM-7C3AED?style=flat-square" height="26" />
+  <img src="https://img.shields.io/badge/ClamAV-FF2D2D?style=flat-square" height="26" />
+  <img src="https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix" height="26" />
+  <img src="https://img.shields.io/badge/Apache%20NiFi-728E9B?style=flat-square&logo=apache" height="26" />
+</p>
 
-> Multi-agent AI pipeline that autonomously handles the full job hunt: resume parsing → LinkedIn search → job matching → cover letter → interview prep → application tracking.
+**Backend · Frontend · Data**
+<p>
+  <img src="https://skillicons.dev/icons?i=django,celery,react,vite,tailwind,js,kotlin,mysql,redis&theme=dark" height="40" />
+</p>
 
-```yaml
-Created:    May 2026
-Stack:      CrewAI multi-agent framework · Streamlit UI · ScrapeGraphAI web scraping
-            · Moonshot AI kimi-k2.6 inference · ngrok tunnel · PM2 managed
-Languages:  Python 95.5% · Shell 3.2% · JavaScript 1.2%
-Status:     LIVE — deployed via ngrok · fully autonomous agent pipeline
-```
-
-**Pipeline Architecture:**
-```
-LinkedIn Search → JD Extraction → Match Scoring
-→ Cover Letter Generation → Interview Prep → Streamlit Dashboard
-```
-
-⭐ *Fully autonomous agent system — from job search to interview prep, zero manual intervention*
-
-**[→ View Project](https://github.com/achupradeep3050/jobmind-agent)**
-
----
-
-### 🥇 XAUUSD FVG Algo — Multi-Broker Automated Gold Trading System
-**`[Private]`** · `Python · React · OANDA · TOOBIT · Claude AI`
-
-> Institutional-grade XAUUSD trading system combining SMC methodology with Fair Value Gap (FVG) detection, multi-broker connectivity, and a React dashboard with TradingView-style charts.
-
-```yaml
-Started:    April 2026
-Stack:      OANDA + TOOBIT broker APIs · React Dashboard
-            · TradingView-style charts · Claude AI learning engine
-            · Telegram alerts · Android App (Kotlin)
-Languages:  Python 55.5% · JavaScript 37.6% · Shell 3.9% · Kotlin 2.1%
-Strategy:   EMA 20/50 Bias + Fair Value Gap (FVG) Entries
-            SMC/ICT price action analysis
-```
-
-⭐ *Multi-broker integration (OANDA + TOOBIT) · Claude AI embedded learning engine · Android companion app*
-
----
-
-### 🥈 SMA Cross Scalp Bot — 24/7 Automated Forex & CFD Scalping
-**`[Private]`** · `Python · React · OANDA API · ATR · React`
-
-> 24/7 automated scalping bot across XAU/USD, EUR/USD, GBP/JPY and other major pairs. Implements 6-gate entry filtering, ATR-based consolidation detection, trailing stops, and 75% profit booking rules.
-
-```yaml
-Started:    April 2026
-Stack:      OANDA API · React Dashboard · Multi-symbol trading
-Languages:  Python 54.9% · JavaScript 36.4% · CSS 4.9% · Shell 3.3%
-Strategy:   SMA8 / SMA21 / SMA50 crossover on M1 timeframe
-Filters:    6-gate entry filter · ATR consolidation detection
-Risk Mgmt:  Trailing stops · 75% profit booking rule
-Symbols:    XAU/USD · EUR/USD · GBP/JPY · AUD/USD · USD/JPY
-```
-
-⭐ *Sophisticated 6-gate quantitative entry system · multi-symbol 24/7 execution · institutional risk management*
-
----
-
-### 🛡️ VA-Opensource-Audit — Enterprise SOC Automation Platform
-**`[Private]`** · `JavaScript · Node.js · OpenVAS · ClamAV · JWT · TOTP`
-
-> Self-hosted Security Operations Center dashboard for agentless vulnerability auditing. Combines OpenVAS/GVM CVE scanning, ClamAV antivirus management, and automated PDF reporting in a RBAC-protected multi-role system.
-
-```yaml
-Started:    April 2026
-Stack:      OpenVAS/GVM · ClamAV · JWT Authentication · TOTP MFA
-            · Role-Based Access Control (RBAC) · PDF Report Generation
-Languages:  JavaScript 76.4% · HTML 17.4% · CSS 5.4% · Shell 0.9%
-Features:   CVE vulnerability audit · real-time threat detection
-            · automated PDF compliance reports · RBAC for SOC analysts
-```
-
-⭐ *Enterprise-grade security automation · TOTP 2FA enforced · automated compliance PDF generation · multi-role RBAC*
-
----
-
-### ⭐ Crypto — Mean Reversion Trading Bot
-**`[Public]`** · `Python · Django · Celery · CCXT · RSI · Bollinger Bands · Glassmorphism`
-
-> Mean reversion algorithmic trading bot for BTC, ETH and DOGE. Uses RSI, Triangular Moving Average (TMA), and Bollinger Bands for entry/exit signals. Django + Celery background processing with a live glassmorphism dashboard.
-
-```yaml
-Started:    December 2025
-Stack:      Django · Celery · CCXT · Telegram Alerts
-Languages:  Python 67.1% · JavaScript 13.5% · HTML 12.5% · CSS 5.9%
-Strategies: RSI · TMA (Triangular Moving Average) · Bollinger Bands
-Coins:      BTC · ETH · DOGE
-UI:         Glassmorphism Design · live dashboard
-Status:     ⭐ 1 Star — the only repo that has earned a star from the community
-```
-
-⭐ *Community-starred · mean reversion strategy with glassmorphism UI dashboard · Django + Celery production stack*
-
-**[→ View Project](https://github.com/achupradeep3050/crypto)**
-
----
-
-### 🌐 Portfolio — achupradeep3050.github.io
-**`[Public]`** · `HTML · CSS · Vanilla JavaScript`
-
-> Visually rich personal portfolio with deep space dark aesthetic, 3D glassmorphism cards, floating particle fields, scroll-reveal animations, and magnetic hover interactions.
-
-```yaml
-Started:    April 2026 · Last updated: May 2026
-Stack:      Vanilla HTML5 · CSS3 · JavaScript · No framework dependencies
-Features:   3D card tilt · scroll reveal · particle field · glassmorphism
-            · magnetic hover · navbar hide-on-scroll
-Live at:    achupradeep3050.github.io/achupradeep3050
-```
-
-⭐ *Zero-dependency vanilla JS/CSS portfolio with cinematic-grade animations*
-
-**[→ Live Site](https://achupradeep3050.github.io/achupradeep3050/)**
-
----
-
-## 📅 Activity Timeline
-
-```
-╔══════════════════════════════════════════════════════════════════════════╗
-║  MAY 2026    ●  jobmind-agent — Autonomous AI job agent pipeline launched
-║              ●  Portfolio v6 — Complete glassmorphism redesign pushed
-║              ●  VA-Opensource-Audit — TOTP MFA + RBAC major update
-╠══════════════════════════════════════════════════════════════════════════╣
-║  APR 2026    ●  xauusd-fvg-algo — EMA+FVG algo trading system initialised
-║              ●  sma_cross_scalp_bot — 6-gate multi-symbol scalper shipped
-║              ●  VA-Opensource-Audit — SOC dashboard MVP completed
-╠══════════════════════════════════════════════════════════════════════════╣
-║  DEC 2025    ●  crypto — Mean reversion bot pushed → earns ⭐ 1 community star
-║              ●  First algo trading experiments with CCXT + Django
-╚══════════════════════════════════════════════════════════════════════════╝
-```
-
----
-
-## 💼 Experience
-
-| Role | Company | Period |
-|------|---------|--------|
-| **DevOps Engineer** | PanApps Inc. | Jan 2024 – Present |
-| **System Administrator** | Leadership Domestic Workers SC | Dec 2021 – Dec 2023 |
-| **Linux System Administrator** | IPSR Solutions Ltd | 2020 – 2022 |
-
----
-
-## 📈 Language Breakdown
-
-```
-Python        ████████████████████░░░  60%   ← dominant
-JavaScript    █████░░░░░░░░░░░░░░░░░░░  14%
-HTML/CSS      ███░░░░░░░░░░░░░░░░░░░░░  13%
-Shell/Bash    ██░░░░░░░░░░░░░░░░░░░░░░   3%
-Kotlin        █░░░░░░░░░░░░░░░░░░░░░░░   3%
-Ruby/Other    █░░░░░░░░░░░░░░░░░░░░░░░   7%
-```
-
----
-
-## 🔗 Connect
-
-<p align="center">
-  <a href="https://linkedin.com/in/achu-pradeep-702667404"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" width="130"/></a>
-  <a href="mailto:achupradeep3050@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" width="115"/></a>
-  <a href="https://github.com/achupradeep3050"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" width="120"/></a>
-  <a href="https://achupradeep3050.github.io/achupradeep3050"><img src="https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white" width="140"/></a>
+**Trading Tech**
+<p>
+  <img src="https://img.shields.io/badge/SMC%2FICT-0EA5E9?style=flat-square" height="26" />
+  <img src="https://img.shields.io/badge/Fair%20Value%20Gaps-F59E0B?style=flat-square" height="26" />
+  <img src="https://img.shields.io/badge/Pine%20Script%20v5-22C55E?style=flat-square&logo=tradingview&logoColor=white" height="26" />
+  <img src="https://img.shields.io/badge/OANDA-1A1A1A?style=flat-square" height="26" />
+  <img src="https://img.shields.io/badge/CCXT-13A10E?style=flat-square" height="26" />
+  <img src="https://img.shields.io/badge/MetaTrader%205-0088CC?style=flat-square" height="26" />
 </p>
 
 ---
 
+### 🚀 Featured Projects
+
+| Project | What it is | Stack |
+|---|---|---|
+| **[xauusd-fvg-algo](https://github.com/achupradeep3050/xauusd-fvg-algo)** | Multi-broker automated **gold (XAUUSD)** trading system — EMA bias + Fair Value Gap entries, live React dashboard, Android app, Telegram alerts | FastAPI · React · Kotlin · OANDA + TOOBIT |
+| **[jobmind-agent](https://github.com/achupradeep3050/jobmind-agent)** | **CrewAI** multi-agent job-application pipeline — JD scrape → match score → resume tailoring → cover letter → interview prep | CrewAI · ScrapeGraphAI · Streamlit |
+| **[VA-Opensource-Audit](https://github.com/achupradeep3050)** | Self-hosted **SOC dashboard** — agentless vuln auditing, ClamAV + OpenVAS/GVM, JWT + TOTP RBAC | Ansible · Node.js · MariaDB |
+| **[sma_cross_scalp_bot](https://github.com/achupradeep3050)** | 24/7 multi-symbol **forex/CFD scalping** bot — SMA 8/21/50 crossover, 6-gate filter, trailing stops | FastAPI · React · MariaDB · OANDA |
+| **[crypto](https://github.com/achupradeep3050/crypto)** | Distributed **crypto mean-reversion** bot (BTC/ETH/DOGE) with a Windows MT5 agent bridge | Django · Celery · CCXT · MT5 |
+
+> 🔒 Several trading & security repos are private — happy to walk through them on request.
+
+---
+
+### 📊 GitHub Stats
+
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=achupradeep3050&style=midnight-purple&label=Profile+Views&color=60A5FA" alt="Views" />
-  <img src="https://img.shields.io/github/followers/achupradeep3050?style=flat&logo=github&color=60A5FA" alt="Followers" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=achupradeep3050&show_icons=true&count_private=true&hide_border=true&theme=midnight-purple&bg_color=0D1117&title_color=F5C542&icon_color=F59E0B&text_color=E2E8F0&rank_icon=github" />
+  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=achupradeep3050&layout=compact&hide_border=true&theme=midnight-purple&bg_color=0D1117&title_color=F5C542&text_color=E2E8F0" />
+</p>
+<p align="center">
+  <img width="49%" src="https://streak-stats.demolab.com?user=achupradeep3050&hide_border=true&theme=midnight-purple&background=0D1117&ring=F59E0B&fire=F5C542&currStreakLabel=F5C542" />
+</p>
+<p align="center">
+  <img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=achupradeep3050&theme=react-dark&bg_color=0D1117&color=F5C542&line=F59E0B&point=E2E8F0&area=true&hide_border=true" />
 </p>
 
 ---
 
+### 🎓 Certifications
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1B2A&height=28&section=footer&text=Built%20in%20Public%20by%20Achu%20Pradeep%20·%20Kerala%2C%20India&fontColor=60A5FA&fontSize=11" alt="Footer" width="100%"/>
+  <img src="https://img.shields.io/badge/Red%20Hat%20Certified%20System%20Administrator-EE0000?style=for-the-badge&logo=redhat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Red%20Hat%20Certified%20Engineer-EE0000?style=for-the-badge&logo=redhat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Certified%20Ethical%20Hacker-2D2D2D?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" />
 </p>
+
+---
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,50:1F2937,100:0D1117&height=120&section=footer" width="100%" />
+<p align="center"><i>⭐ Reach out — open to Linux DevOps · SRE · AI Infrastructure · Security Operations roles.</i></p>
