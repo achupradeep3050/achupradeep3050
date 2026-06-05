@@ -2,7 +2,7 @@
 <!--                    Achu Pradeep · GitHub Profile                  -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<a href="https://achupradeep3050.github.io">
+<a href="https://hedge.dpdns.org">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1F2937,100:F59E0B&height=200&section=header&text=Achu%20Pradeep&fontColor=F5C542&fontSize=52&fontAlignY=38&desc=Linux%20DevOps%20Engineer%20·%20AI%20Agent%20Developer%20·%20Algo-Trading%20Systems&descSize=18&descAlignY=60&descColor=E2E8F0" alt="Achu Pradeep" />
 </a>
 
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://achupradeep3050.github.io"><img src="https://img.shields.io/badge/Portfolio-achupradeep3050.github.io-F59E0B?style=for-the-badge&logo=githubpages&logoColor=white" /></a>
+  <a href="https://hedge.dpdns.org"><img src="https://img.shields.io/badge/Portfolio-hedge.dpdns.org-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
   <a href="https://linkedin.com/in/achu-pradeep-702667404"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:achupradeep3050@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Aluva,%20Kerala%20·%20India-1F2937?style=for-the-badge&logo=googlemaps&logoColor=F59E0B" />
@@ -53,7 +53,7 @@ that run them.
 
 **DevOps · Cloud · Security**
 <p>
-  <img src="https://skillicons.dev/icons?i=linux,redhat,docker,kubernetes,ansible,jenkins,terraform,bash,nginx,grafana,prometheus,aws&theme=dark" height="40" />
+  <img src="https://skillicons.dev/icons?i=linux,redhat,docker,ansible,jenkins,bash,nginx,grafana,prometheus,aws&theme=dark" height="40" />
 </p>
 <p>
   <img src="https://img.shields.io/badge/Wazuh%20SIEM-3B82F6?style=flat-square" height="26" />
