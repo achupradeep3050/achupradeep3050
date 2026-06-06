@@ -84,6 +84,7 @@ that run them.
 
 | Project | What it is | Stack |
 |---|---|---|
+| **[Hermes-USB-Portable](https://github.com/achupradeep3050/Hermes-USB-Portable)** | **Portable AI agent on a USB stick** — runs Nous Research's hermes-agent on Windows/macOS/Linux with zero host installs; cross-platform launchers, fast multi-provider model switching (Kimi · Ollama · LM Studio · Gemini), and an Obsidian "brain" for long-term + per-device memory | Bash · Batch · Python · Obsidian |
 | **[xauusd-fvg-algo](https://github.com/achupradeep3050/xauusd-fvg-algo)** | Multi-broker automated **gold (XAUUSD)** trading system — EMA bias + Fair Value Gap entries, live React dashboard, Android app, Telegram alerts | FastAPI · React · Kotlin · OANDA + TOOBIT |
 | **[jobmind-agent](https://github.com/achupradeep3050/jobmind-agent)** | **CrewAI** multi-agent job-application pipeline — JD scrape → match score → resume tailoring → cover letter → interview prep | CrewAI · ScrapeGraphAI · Streamlit |
 | **[VA-Opensource-Audit](https://github.com/achupradeep3050)** | Self-hosted **SOC dashboard** — agentless vuln auditing, ClamAV + OpenVAS/GVM, JWT + TOTP RBAC | Ansible · Node.js · MariaDB |
