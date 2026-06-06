@@ -26,7 +26,7 @@
 ```python
 class AchuPradeep:
     role        = "Linux DevOps Engineer & AI Agent Developer"
-    experience  = "2.5+ yrs IT/server administration → production AI & trading systems"
+    experience  = "4+ yrs IT/server administration → production AI & trading systems"
     certs       = ["RHCSA (170-179-113)", "RHCE", "CEH"]
     focus       = ["Infra automation", "Agentic AI", "Algorithmic trading", "Security ops"]
     seeking     = ["Linux DevOps", "SRE", "AI Infrastructure", "Security Operations"]
