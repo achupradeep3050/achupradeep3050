@@ -767,3 +767,9 @@ body.scrolled .nav-links a { color: var(--dark-muted); }
 /* ── FILTER HIDDEN ── */
 .tab-panel { display: none; }
 .tab-panel.active { display: grid; gap: 1.5rem; }
+/* A private repo has no public URL. Say so rather than linking to a 404. */
+.plink--private{
+  opacity:.7;
+  cursor:default;
+  border-style:dashed;
+}

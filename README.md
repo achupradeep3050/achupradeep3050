@@ -2,7 +2,7 @@
 <!--                    Achu Pradeep · GitHub Profile                  -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
-<a href="https://hedge.dpdns.org">
+<a href="https://achupradeep.online">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1F2937,100:F59E0B&height=200&section=header&text=Achu%20Pradeep&fontColor=F5C542&fontSize=52&fontAlignY=38&desc=Linux%20DevOps%20Engineer%20·%20AI%20Agent%20Developer%20·%20Algo-Trading%20Systems&descSize=18&descAlignY=60&descColor=E2E8F0" alt="Achu Pradeep" />
 </a>
 
@@ -13,7 +13,8 @@
 </p>
 
 <p align="center">
-  <a href="https://hedge.dpdns.org"><img src="https://img.shields.io/badge/Portfolio-hedge.dpdns.org-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://achupradeep.online"><img src="https://img.shields.io/badge/Portfolio-achupradeep.online-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://github.com/achupradeep3050/achupradeep3050/raw/main/Achu_Pradeep_Resume.pdf"><img src="https://img.shields.io/badge/Résumé-PDF-22C55E?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" /></a>
   <a href="https://linkedin.com/in/achu-pradeep-702667404"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:achupradeep3050@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Aluva,%20Kerala%20·%20India-1F2937?style=for-the-badge&logo=googlemaps&logoColor=F59E0B" />
@@ -84,14 +85,18 @@ that run them.
 
 | Project | What it is | Stack |
 |---|---|---|
-| **[Hermes-USB-Portable](https://github.com/achupradeep3050/Hermes-USB-Portable)** | **Portable AI agent on a USB stick** — runs Nous Research's hermes-agent on Windows/macOS/Linux with zero host installs; cross-platform launchers, fast multi-provider model switching (Kimi · Ollama · LM Studio · Gemini), and an Obsidian "brain" for long-term + per-device memory | Bash · Batch · Python · Obsidian |
-| **[xauusd-fvg-algo](https://github.com/achupradeep3050/xauusd-fvg-algo)** | Multi-broker automated **gold (XAUUSD)** trading system — EMA bias + Fair Value Gap entries, live React dashboard, Android app, Telegram alerts | FastAPI · React · Kotlin · OANDA + TOOBIT |
+| **[Hermes-USB-Portable](https://github.com/achupradeep3050/Hermes-USB-Portable)** | **Portable AI agent on a USB stick** — runs Nous Research's hermes-agent on Windows/macOS/Linux with zero host installs; cross-platform launchers, multi-provider model switching (NVIDIA · Kimi · Ollama · LM Studio · Gemini), and an Obsidian "brain" that travels on the drive | Bash · Batch · Python · Obsidian |
 | **[jobmind-agent](https://github.com/achupradeep3050/jobmind-agent)** | **CrewAI** multi-agent job-application pipeline — JD scrape → match score → resume tailoring → cover letter → interview prep | CrewAI · ScrapeGraphAI · Streamlit |
-| **[VA-Opensource-Audit](https://github.com/achupradeep3050)** | Self-hosted **SOC dashboard** — agentless vuln auditing, ClamAV + OpenVAS/GVM, JWT + TOTP RBAC | Ansible · Node.js · MariaDB |
-| **[sma_cross_scalp_bot](https://github.com/achupradeep3050)** | 24/7 multi-symbol **forex/CFD scalping** bot — SMA 8/21/50 crossover, 6-gate filter, trailing stops | FastAPI · React · MariaDB · OANDA |
 | **[crypto](https://github.com/achupradeep3050/crypto)** | Distributed **crypto mean-reversion** bot (BTC/ETH/DOGE) with a Windows MT5 agent bridge | Django · Celery · CCXT · MT5 |
+| 🔒 **pulse-crm** | Internal **CRM, public ad funnel and WhatsApp commerce platform** on one database — real-time lead capture, a conversational sales bot, role-based access, and backup/restore proven by destroying and restoring live data | Next.js 16 · TypeScript · Prisma · PostgreSQL · Auth.js |
+| 🔒 **mt5-lab** | **Eleven native MQL5 expert advisors** with a headless compile and backtest toolchain — each strategy ships with its own measured numbers and its own control | MQL5 · MetaTrader 5 · Python |
+| 🔒 **pulse-gold-system** | Live **XAUUSD signal system** — trading cockpit, five public signal sites, WhatsApp and Telegram broadcast, running 24/5 | FastAPI · TradingView feed · Node |
+| 🔒 **VA-Opensource-Audit** | Self-hosted **SOC dashboard** — agentless vulnerability auditing over Ansible SSH, ClamAV fleet management, OpenVAS/GVM scanning, JWT + TOTP with four role tiers | Ansible · Node.js · MariaDB |
+| 🔒 **xauusd-fvg-algo** | Multi-broker automated **gold (XAUUSD)** system — EMA bias + Fair Value Gap entries, live React dashboard, Android app, Telegram alerts | FastAPI · React · Kotlin · OANDA + TOOBIT |
+| 🔒 **sma_cross_scalp_bot** | 24/7 multi-symbol **forex/CFD scalper** — SMA 8/21/50 crossover, six-gate entry filter, trailing stops | FastAPI · React · MariaDB · OANDA |
 
-> 🔒 Several trading & security repos are private — happy to walk through them on request.
+> 🔒 marks a private repository — the trading and security systems are not public.
+> Happy to walk through any of them on request.
 
 ---
 
