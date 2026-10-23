@@ -79,6 +79,7 @@ trading-research desk with a human in the loop.
 |---|---|---|
 | **[grok-jev-research-desk](https://github.com/achupradeep3050/grok-jev-research-desk)** | Open-source **multi-agent research desk**: five LLM agents, Telegram approval hub, late reconfirmation, fixed-dollar risk, HMAC-signed execution webhook | Python · xAI Grok · Telegram Bot API · Docker |
 | 🔒 **Hermes agent brain** | My always-on **personal AI agent**: Hermes Agent with an Obsidian vault that syncs both ways and **OpenViking** semantic memory. It has launchd watchdogs, a Telegram gateway, and supervises the trading-desk agents | Python · OpenViking · llama.cpp embeddings · launchd |
+| 🔒 **MiroFish Launch Lab** | **Swarm-simulation launch tester** built on MiroFish (fork): it tests a launch page, price or ad on a panel of AI customers, each with their own background, budget and personality, then writes a prediction report and lets you interview any agent | Python · Flask · Vue 3 · CAMEL-AI OASIS · Neo4j · xAI Grok · Docker |
 | **[Hermes-USB-Portable](https://github.com/achupradeep3050/Hermes-USB-Portable)** | My fork of a **portable AI agent on a USB stick**. I hardened the Windows installer (exFAT, lock-tolerant refresh, uv venv) and verified the v1.8 stack on Apple Silicon | Bash · Batch · Python |
 | **[jobmind-agent](https://github.com/achupradeep3050/jobmind-agent)** | **CrewAI** multi-agent job-application pipeline: JD scrape → match score → résumé tailoring → cover letter → interview prep | CrewAI · ScrapeGraphAI · Streamlit |
 
