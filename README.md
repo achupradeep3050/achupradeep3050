@@ -87,7 +87,7 @@ trading-research desk with a human in the loop.
 | Project | What it is | Stack |
 |---|---|---|
 | 🔒 **AetherHFT** | **High-performance trading engine for MetaTrader 5**: a commercial Windows desktop product with built-in risk controls, licensing and in-app updates | C# · .NET 8 WPF · xUnit · Cloudflare Workers · GitHub Actions |
-| 🔒 **KESTREL** | Multi-account **Binance spot rotation bot** with a live dashboard. It ships its own measurement: the requested "top-10 gainers" rule was **refused** on 988 days of data against a random control | Python · FastAPI · SQLite |
+| 🔒 **KESTREL** | **Multi-account Binance spot trading bot** with a live dashboard, pluggable strategy rules, per-account risk limits and a kill switch. Every rule is measured before it is allowed near real money | Python · FastAPI · SQLite |
 | 🔒 **VectisSplit** | **Non-custodial subscription splitter** with Merkle multi-tier referral payouts. Every payment is verified on-chain through an idempotent, HMAC-signed webhook backend | Solidity 0.8 · OpenZeppelin 5 · Foundry fuzz/invariants · TypeScript |
 | 🔒 **mt5-lab** | **Eleven native MQL5 expert advisors** with a headless compile and backtest toolchain. Each strategy ships with its own measured numbers and its own control | MQL5 · MetaTrader 5 · Python |
 | 🔒 **pulse-gold-system** | Live **XAUUSD signal system**: trading cockpit, five public signal sites, WhatsApp and Telegram broadcast | FastAPI · TradingView feed · Node |
