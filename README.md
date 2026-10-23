@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/achupradeep3050/grok-jev-research-desk">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=F5C542&center=true&vCenter=true&width=760&lines=I+automate+infrastructure+and+ship+AI+agents.;Multi-agent+Grok+%2B+JEV+research+desk+%E2%80%94+now+open+source.;C%23+latency-arbitrage+engine+%C2%B7+self-hosted+AI+SOC.;RHCSA+%2B+RHCE+%2B+CEH+certified." alt="typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=F5C542&center=true&vCenter=true&width=760&lines=I+automate+infrastructure+and+ship+AI+agents.;Multi-agent+Grok+%2B+JEV+research+desk+%E2%80%94+now+open+source.;C%23+high-performance+trading+engine+%C2%B7+self-hosted+AI+SOC.;RHCSA+%2B+RHCE+%2B+CEH+certified." alt="typing" />
   </a>
 </p>
 
@@ -86,7 +86,7 @@ trading-research desk with a human in the loop.
 
 | Project | What it is | Stack |
 |---|---|---|
-| 🔒 **AetherHFT** | **Latency-arbitrage engine** that compares fast feeds (Binance, ECN) with slower MT5 broker quotes over direct sockets. It has a risk sentinel, broker reconciliation every second and a per-account drawdown kill switch. A **Cloudflare-Workers licence server** delivers signed in-app updates from GitHub releases, and a Telegram relay bot handles buyer contact | C# · .NET 8 WPF · xUnit · Cloudflare Workers · GitHub Actions |
+| 🔒 **AetherHFT** | **High-performance trading engine for MetaTrader 5**: a commercial Windows desktop product with built-in risk controls, licensing and in-app updates | C# · .NET 8 WPF · xUnit · Cloudflare Workers · GitHub Actions |
 | 🔒 **KESTREL** | Multi-account **Binance spot rotation bot** with a live dashboard. It ships its own measurement: the requested "top-10 gainers" rule was **refused** on 988 days of data against a random control | Python · FastAPI · SQLite |
 | 🔒 **VectisSplit** | **Non-custodial subscription splitter** with Merkle multi-tier referral payouts. Every payment is verified on-chain through an idempotent, HMAC-signed webhook backend | Solidity 0.8 · OpenZeppelin 5 · Foundry fuzz/invariants · TypeScript |
 | 🔒 **mt5-lab** | **Eleven native MQL5 expert advisors** with a headless compile and backtest toolchain. Each strategy ships with its own measured numbers and its own control | MQL5 · MetaTrader 5 · Python |
@@ -148,7 +148,6 @@ trading-research desk with a human in the loop.
 **Trading tech**
 <p>
   <img src="https://img.shields.io/badge/MetaTrader%205-0088CC?style=flat-square" height="26" alt="MetaTrader 5" />
-  <img src="https://img.shields.io/badge/MT5%20sockets-0088CC?style=flat-square" height="26" alt="MT5 sockets" />
   <img src="https://img.shields.io/badge/Binance%20API-F0B90B?style=flat-square&logo=binance&logoColor=black" height="26" alt="Binance API" />
   <img src="https://img.shields.io/badge/Pine%20Script%20v5-22C55E?style=flat-square&logo=tradingview&logoColor=white" height="26" alt="Pine Script" />
   <img src="https://img.shields.io/badge/CCXT-13A10E?style=flat-square" height="26" alt="CCXT" />
