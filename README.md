@@ -129,7 +129,7 @@ trading-research desk with a human in the loop.
 
 **DevOps · Cloud · Security**
 <p>
-  <img src="https://skillicons.dev/icons?i=linux,redhat,docker,ansible,jenkins,bash,nginx,apache,cloudflare,githubactions,aws,grafana&theme=dark" height="40" alt="Linux, Red Hat, Docker, Ansible, Jenkins, Bash, Nginx, Apache, Cloudflare, GitHub Actions, AWS, Grafana" />
+  <img src="https://skillicons.dev/icons?i=linux,redhat,docker,ansible,jenkins,bash,nginx,cloudflare,githubactions,aws,grafana&theme=dark" height="40" alt="Linux, Red Hat, Docker, Ansible, Jenkins, Bash, Nginx, Cloudflare, GitHub Actions, AWS, Grafana" />
 </p>
 <p>
   <img src="https://img.shields.io/badge/Wazuh%20SIEM-3B82F6?style=flat-square" height="26" alt="Wazuh" />
