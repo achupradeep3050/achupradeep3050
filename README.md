@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://achupradeep.online"><img src="https://img.shields.io/badge/Play%20the%20portfolio-achupradeep.online-FF3D94?style=for-the-badge&labelColor=0E0620" alt="Portfolio: achupradeep.online" /></a>
-  <a href="mailto:achupradeep3050@gmail.com"><img src="https://img.shields.io/badge/Email-achupradeep3050%40gmail.com-FFD166?style=for-the-badge&labelColor=0E0620" alt="Email" /></a>
+  <a href="mailto:achupradeep3050@gmail.com"><img src="https://img.shields.io/badge/Email-say%20hello-FFD166?style=for-the-badge&labelColor=0E0620" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/achu-pradeep-702667404"><img src="https://img.shields.io/badge/LinkedIn-Achu%20Pradeep-31E0D0?style=for-the-badge&labelColor=0E0620" alt="LinkedIn" /></a>
 </p>
 
